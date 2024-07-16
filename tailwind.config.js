@@ -32,7 +32,7 @@ module.exports = {
         fadeInBounce: "fadeInBounce 1s ease-out forwards",
         fadeOut: "fadeOut 1s ease-in forwards",
         fadeInRight: "fadeInRight 2s ease-out forwards",
-        scroll: "scroll 40s linear infinite",
+        scroll: "scroll 70s linear infinite",
       },
     },
   },

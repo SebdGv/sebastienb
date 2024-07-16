@@ -36,3 +36,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Personnalisation des points de pagination de Slick */
+.slick-dots li button:before {
+  @apply text-xs text-black;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-blue-500;
+}
+
+/* Personnalisation des flèches de navigation de Slick */
+.slick-prev:before,
+.slick-next:before {
+  @apply text-2xl text-black;
+}
+
+/* Styles supplémentaires pour ajuster la présentation des slides */
+.carousel .slick-slide {
+  @apply text-center text-black bg-gray-200 border border-gray-300 p-4;
+}

@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Dupliquer les icônes jusqu'à ce qu'elles remplissent la largeur de la fenêtre
   const repeatTimes =
-    Math.ceil(window.innerWidth / iconContainer.clientWidth) * 2;
+    Math.ceil(window.innerWidth / iconContainer.clientWidth) + 1;
   for (let i = 0; i < repeatTimes; i++) {
     const clone = document.createElement("div");
     clone.innerHTML = icons;
@@ -104,4 +104,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const extraClone = document.createElement("div");
   extraClone.innerHTML = icons;
   iconContainer.appendChild(extraClone);
+});
+
+// Apparition des éléments au scroll
+
+document.addEventListener("scroll", () => {
+  const burgerLines = document.querySelectorAll(".line");
+
+  let scrollValue =
+    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+  console.log(scrollValue);
+  if (scrollValue >= 0.25) {
+    aboutTitle.classList.remove("translate-x-[-1500px]");
+  }
+  if (scrollValue >= 0.3) {
+    aboutText.classList.remove("translate-x-[-1200px]");
+  }
+  if (scrollValue >= 0.82) {
+    body.classList.remove("bg-white");
+    body.classList.add("bg-black", "text-white");
+    menu.classList.remove("bg-white");
+    menu.classList.add("bg-black", "text-white");
+    contactBtn.classList.add("bg-white", "text-black");
+    contactBtn.classList.remove("text-white");
+
+    burgerLines.forEach((line) => {
+      line.classList.add("bg-white");
+    });
+  } else {
+    body.classList.remove("bg-black", "text-white");
+    body.classList.add("bg-white");
+    menu.classList.remove("bg-black", "text-white");
+    menu.classList.add("bg-white");
+    contactBtn.classList.add("bg-black", "text-white");
+    contactBtn.classList.remove("bg-white", "text-black");
+    burgerLines.forEach((line) => {
+      line.classList.remove("bg-white");
+    });
+  }
+});
+
+// Caroussel slick
+$(function () {
+  $(".carousel").slick({
+    infinite: true,
+    dots: true,
+    lazyLoad: "ondemand",
+  });
 });

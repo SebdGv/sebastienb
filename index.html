@@ -1,95 +1,228 @@
 <!DOCTYPE html>
-<html lang="fr" class="html scroll-smooth overflow-x-hidden "> <head>
+<html lang="fr" class="html scroll-smooth overflow-x-hidden">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/slick-carousel/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/slick-carousel/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Sb. - Web developer -</title>
   </head>
-  <body class="bg-white text-center font-custom text-[64px] max-w-[1800px] mx-auto pt-8 ">
-    <div class="cursor bg-[#ffffff] mix-blend-difference w-20 h- rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none overflow-x-hidden"></div>
+  <body
+    id="body"
+    class="text-center font-custom text-[64px] max-w-[1800px] mx-auto pt-8 transition-colors duration-500 ease-in"
+  >
+    <div
+      class="cursor bg-[#ffffff] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none overflow-x-hidden"
+    ></div>
     <header class="sticky top-0 z-10">
       <nav class="px-20">
         <div class="navBar flex justify-between items-center">
-          <div class="homeLogo z-20 tracking-tighter  text-[35px] font-light "><a href="#">Sb.</a></div>
-          <div class="burger z-20 flex flex-col justify-around cursor-pointer h-4" onclick="toggleMenu()">
-            <div class="line line1 w-12 h-[2px] bg-black transition-all duration-300"></div>
-            <div class="line line2 w-12 h-[2px] bg-black transition-all duration-300 opacity-0"></div>
-            <div class="line line3 w-12 h-[2px] bg-black transition-all duration-300"></div>
+          <div class="homeLogo z-20 tracking-tighter text-[35px] font-light">
+            <a href="#">Sb.</a>
+          </div>
+          <div
+            class="burger z-20 flex flex-col justify-around cursor-pointer h-4"
+            onclick="toggleMenu()"
+          >
+            <div
+              class="line line1 w-12 h-[2px] bg-black transition-all duration-300"
+            ></div>
+            <div
+              class="line line2 w-12 h-[2px] bg-black transition-all duration-300 opacity-0"
+            ></div>
+            <div
+              class="line line3 w-12 h-[2px] bg-black transition-all duration-300"
+            ></div>
           </div>
         </div>
-        <div id="menu" class="hidden z-10 flex-col justify-center items-center absolute bottom-0 left-0 w-full h-[100vh] bg-white">
-        <ul class="flex flex-col justify-center items-center h-full font-light text-9xl gap-10  " id="menu-text" onclick="toggleMenu()">
-          <li><a href="#about"  >about</a></li>
-          <li><a href="#works" >works</a></li>
-          <li><a href="#contact" >contact</a></li>
-        </ul>
-      </div>
-      </nav>  
+        <div
+          id="menu"
+          class="hidden z-10 flex-col justify-center items-center absolute bottom-0 left-0 w-full h-[100vh] bg-white"
+        >
+          <ul
+            class="flex flex-col justify-center items-center h-full font-light text-9xl gap-10"
+            id="menu-text"
+            onclick="toggleMenu()"
+          >
+            <li><a href="#about">about</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <section id="hero" class="flex justify-center items-center h-[65vh] my-32" >
+      <section
+        id="hero"
+        class="flex justify-center items-center h-[65vh] my-32"
+      >
         <h1 class="font-light leading-tight w-[70vw] pb-[84px]" id="hero-text">
           Hello, I am Sebastien, a freelance web developer, building fonctional
           websites & digital experiences.
         </h1>
       </section>
-        <section id="about" class="flex flex-row-reverse items-center pl-20 my-32">
-          <div class="imgAbout flex justify-center items-center animate-fadeInRight hover:scale-110">
-            <img src="./assets/images/hero.jpg" class=" hover:rounded-[70px] transition-all duration-500 shadow-2xl w-full max-w-[50%] max-h-full "  alt="Dev Sebastien photography" />
-          </div>
-          <div class="textAbout text-left ">
-            <h2 id="about" class="text-[24px] text-gray-400 pb-32">
-              about me</h2>
-              <p class="text-[20px]  pl-20">
-                Body text for your whole article or post. We’ll put in some lorem
-                ipsum to show how a filled-out page might look: 
-                <br><br>
-                Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation
-                exquisite perfect nostrud nisi intricate Content. Qui international
-                first-class nulla ut. Punctual adipisicing, essential lovely queen
-                tempor eiusmod irure.
-              </p>
+      <section
+        id="about"
+        class="flex flex-row-reverse items-center pl-20 my-32"
+      >
+        <div
+          class="imgAbout flex justify-center items-center animate-fadeInRight hover:scale-110"
+        >
+          <img
+            src="./assets/images/hero.jpg"
+            class="rounded-[70px] transition-all duration-500 ease-in-out w-full max-w-[50%] max-h-full"
+            alt="Dev Sebastien photography"
+          />
+        </div>
+        <div class="textAbout text-left">
+          <h2
+            id="aboutTitle"
+            class="text-[24px] text-gray-400 pb-32 translate-x-[-1500px] transition-all duration-1000"
+          >
+            about me
+          </h2>
+          <p
+            id="aboutText"
+            class="text-[20px] pl-20 translate-x-[-1200px] transition-all duration-1000"
+          >
+            Body text for your whole article or post. We’ll put in some lorem
+            ipsum to show how a filled-out page might look:
+            <br /><br />
+            Excepteur efficient emerging, minim veniam anim aute carefully
+            curated Ginza conversation exquisite perfect nostrud nisi intricate
+            Content. Qui international first-class nulla ut. Punctual
+            adipisicing, essential lovely queen tempor eiusmod irure.
+          </p>
+        </div>
+      </section>
+      <section id="works" class="my-60">
+        <h3 class="font-light mb-36">Selected Works</h3>
+        <div
+          class="bg-gray-300 w-full h-[881px] relative flex justify-center items-center"
+        >
+          <div class="carousel absolute top-0 bottom-0">
+            <div>
+              <img
+                class="w-[865px] h-[511px] rounded-[20px]"
+                src="./assets/images/nina01.png"
+                alt="Printscreen of SEO project"
+              />
             </div>
-          </section>
-          <section id="works" class="my-60">
-            <h3 class="font-light mb-36">Selected Works</h3>
-            <div class="bg-gray-300 w-full h-[881px] flex justify-center items-center relative">
-              <img class="absolute  w-[865px] h-[511px] rounded-[20px]" src="./assets/images/nina01.png" alt="Printscreen of SEO project">
+            <div>
+              <img
+                class="w-[865px] h-[511px] rounded-[20px]"
+                src="./assets/images/nina01.png"
+                alt="Printscreen of SEO project"
+              />
+            </div>
+            <div>
+              <img
+                class="w-[865px] h-[511px] rounded-[20px]"
+                src="./assets/images/nina01.png"
+                alt="Printscreen of SEO project"
+              />
             </div>
           </div>
-        </section>
-        <section id="scrollBar" class="w-full h-[600px] flex justify-center items-center my-60">
-          <div class="containIcon flex whitespace-nowrap animate-scroll" >
-            <i class="icon fa-brands fa-css3 fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-            <i class="icon fa-brands fa-html5 fa-xs mr-36 transition-transform" style="color: #000000;" aria-label="icon HTML5"></i>
-            <i class="icon fa-brands fa-square-js fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-            <i class="icon fa-brands fa-react fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-            <i class="icon fa-brands fa-node fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-            <i class="icon fa-brands fa-github fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-            <i class="icon fa-brands fa-git fa-xs mr-36 transition-transform" style="color: #000000;"></i>
-          </div>
-        </section>
-        <section id="contact" class="bg-black text-white  flex flex-col justify-center items-center py-80">
-          <h4 class="pb-10 font-light">You have a project ?</h4>
-          <button class="transition-all duration-300 w-52 h-20 rounded-full bg-white text-black flex items-center justify-center text-[20px] font-bold">
-            <a href="mailto:bes.dgv@gmail.com" class="">Let's talk</a>
-          </button>
-          <div class="py-24 flex flex-col justify-center items-center ">
-            <a href="mailto:bes.dgv@gmail.com" class="font-light">berquez.seb@gmail.com</a>
-            <a href="tel:+33698734989" class="font-light">+33 698734989</a>
-            <i class="fa-brands fa-linkedin fa-xs mt-14" style="color: #ffffff;"></i>
-          </div>
-        </section>
-      </main>
-    <footer class="flex flex-col justify-center items-center bg-black text-white font-light pb-20">
+        </div>
+      </section>
+      <section
+        id="scrollBar"
+        class="w-full h-[600px] flex justify-center items-center my-60"
+      >
+        <div class="containIcon flex whitespace-nowrap animate-scroll">
+          <i
+            class="icon fa-brands fa-css3 fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+          <i
+            class="icon fa-brands fa-html5 fa-xs mr-36 transition-transform"
+            style="color: #000000"
+            aria-label="icon HTML5"
+          ></i>
+          <i
+            class="icon fa-brands fa-square-js fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+          <i
+            class="icon fa-brands fa-react fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+          <i
+            class="icon fa-brands fa-node fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+          <i
+            class="icon fa-brands fa-github fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+          <i
+            class="icon fa-brands fa-git fa-xs mr-36 transition-transform"
+            style="color: #000000"
+          ></i>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="flex flex-col justify-center items-center pb-80"
+      >
+        <h4 class="pb-10 font-light">You have a project ?</h4>
+        <button
+          id="contactBtn"
+          class="w-52 h-20 rounded-full flex items-center justify-center text-[20px] transition-all duration-500 ease-in-out"
+        >
+          <a href="mailto:bes.dgv@gmail.com" class="">Let's talk</a>
+        </button>
+        <div class="py-24 flex flex-col justify-center items-center">
+          <a href="mailto:bes.dgv@gmail.com" class="font-light"
+            >berquez.seb@gmail.com</a
+          >
+          <a href="tel:+33698734989" class="font-light">+33 698734989</a>
+          <i
+            class="fa-brands fa-linkedin fa-xs mt-14"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col justify-center items-center font-light pb-20">
       <ul>
         <li><a href="#about" class="hover:text-gray-500">about</a></li>
         <li><a href="#works" class="hover:text-gray-500">works</a></li>
         <li><a href="#contact" class="hover:text-gray-500">contact</a></li>
       </ul>
-
     </footer>
+    <p class="text-gray-500 text-xs">
+      &copy; 2024 sebastien berquez. All rights reserved.
+    </p>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/slick-carousel/slick/slick.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
