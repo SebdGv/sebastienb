@@ -37,6 +37,23 @@ function updateCursor() {
   cursor.style.left = cursorX + window.scrollX + "px";
 }
 
+// cursol survol carousel
+const techCursor = () => {
+  const carouselImages = document.querySelectorAll(".carouselImage");
+  console.log(carouselImages);
+  carouselImages.forEach((image) => {
+    const text = image.getAttribute("data-text");
+    image.addEventListener("mouseover", () => {
+      cursor.classList.add("activeCursor");
+      cursor.textContent = text;
+    });
+    image.addEventListener("mouseleave", () => {
+      cursor.classList.remove("activeCursor");
+      cursor.textContent = "";
+    });
+  });
+};
+techCursor();
 //==================================================================================================
 // Gestion animation in&out content
 //==================================================================================================
@@ -93,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Dupliquer les icônes jusqu'à ce qu'elles remplissent la largeur de la fenêtre
   const repeatTimes =
-    Math.ceil(window.innerWidth / iconContainer.clientWidth) + 1;
+    Math.ceil(window.innerWidth / iconContainer.clientWidth) * 4;
   for (let i = 0; i < repeatTimes; i++) {
     const clone = document.createElement("div");
     clone.innerHTML = icons;
@@ -113,11 +130,10 @@ document.addEventListener("scroll", () => {
 
   let scrollValue =
     (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-  console.log(scrollValue);
-  if (scrollValue >= 0.25) {
+  if (scrollValue >= 0.23) {
     aboutTitle.classList.remove("translate-x-[-1500px]");
   }
-  if (scrollValue >= 0.3) {
+  if (scrollValue >= 0.27) {
     aboutText.classList.remove("translate-x-[-1200px]");
   }
   if (scrollValue >= 0.82) {
@@ -145,10 +161,21 @@ document.addEventListener("scroll", () => {
 });
 
 // Caroussel slick
-$(function () {
-  $(".carousel").slick({
-    infinite: true,
+$(document).ready(function () {
+  $(".fade").slick({
     dots: true,
-    lazyLoad: "ondemand",
+    infinite: true,
+    speed: 500,
+    cssEase: "linear",
+    adaptiveHeight: true,
+    slidesToShow: 1, // Nombre de slides à montrer
+    slidesToScroll: 1, // Nombre de slides à défiler
+    centerMode: true, // Active le mode centré
+    centerPadding: "60px", // Ajuste l'espace autour des slides centrales
+    variableWidth: true,
+    appendDots: $(".dots"),
+    focusOnSelect: true,
+    mobileFirst: true,
+    swipe: true,
   });
 });

@@ -24,12 +24,13 @@
     />
     <title>Sb. - Web developer -</title>
   </head>
+
   <body
     id="body"
     class="text-center font-custom text-[64px] max-w-[1800px] mx-auto pt-8 transition-colors duration-500 ease-in"
   >
     <div
-      class="cursor bg-[#ffffff] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none overflow-x-hidden"
+      class="cursor bg-[#ffffff] text-white text-[10px] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none overflow-x-hidden transition-transform duration-300"
     ></div>
     <header class="sticky top-0 z-10">
       <nav class="px-20">
@@ -54,7 +55,7 @@
         </div>
         <div
           id="menu"
-          class="hidden z-10 flex-col justify-center items-center absolute bottom-0 left-0 w-full h-[100vh] bg-white"
+          class="hidden z-10 flex-col justify-center items-center absolute bottom-[52.5px] left-0 w-full h-[100vh] bg-white"
         >
           <ul
             class="flex flex-col justify-center items-center h-full font-light text-9xl gap-10"
@@ -115,31 +116,45 @@
       <section id="works" class="my-60">
         <h3 class="font-light mb-36">Selected Works</h3>
         <div
-          class="bg-gray-300 w-full h-[881px] relative flex justify-center items-center"
+          class="bg-gray-300 w-[100vw] h-[881px] relative flex justify-center items-center"
         >
-          <div class="carousel absolute top-0 bottom-0">
-            <div>
+          <div class="carousel fade flex justify-center items-center w-full">
+            <div class="flex justify-center image-container">
               <img
-                class="w-[865px] h-[511px] rounded-[20px]"
-                src="./assets/images/nina01.png"
+                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
+                src="./assets/images/ninaCapt.png"
                 alt="Printscreen of SEO project"
+                data-text="test"
               />
             </div>
-            <div>
+            <div class="flex justify-center image-container">
               <img
-                class="w-[865px] h-[511px] rounded-[20px]"
-                src="./assets/images/nina01.png"
+                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
+                src="./assets/images/kasaCapt.png"
                 alt="Printscreen of SEO project"
+                data-text="html"
               />
             </div>
-            <div>
+            <div class="flex justify-center">
               <img
-                class="w-[865px] h-[511px] rounded-[20px]"
-                src="./assets/images/nina01.png"
+                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
+                src="./assets/images/sophieCapt.png"
                 alt="Printscreen of SEO project"
+                data-text="react"
+              />
+            </div>
+            <div class="flex justify-center">
+              <img
+                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
+                src="./assets/images/bookiCapt.png"
+                alt="Printscreen of SEO project"
+                data-text="JS"
               />
             </div>
           </div>
+          <div
+            class="dots absolute bottom-16 w-full flex justify-center items-center"
+          ></div>
         </div>
       </section>
       <section
