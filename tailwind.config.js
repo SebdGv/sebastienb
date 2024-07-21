@@ -21,6 +21,10 @@ module.exports = {
         },
         fadeInRight: {
           "0%": { opacity: 0, transform: "translateX(3000px)" },
+          "80%": {
+            opacity: 0,
+            transform: "translateX(2000px)",
+          },
           "100%": { opacity: 1, transform: "translateX(0)" },
         },
         scroll: {

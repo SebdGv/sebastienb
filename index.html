@@ -27,29 +27,29 @@
 
   <body
     id="body"
-    class="text-center font-custom text-[64px] max-w-[1800px] mx-auto pt-8 transition-colors duration-500 ease-in"
+    class="text-center font-custom max-w-[1800px] transition-colors duration-500 ease-in"
   >
     <div
-      class="cursor bg-[#ffffff] text-white text-[10px] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none overflow-x-hidden transition-transform duration-300"
+      class="cursor lg:bg-[#ffffff] text-white text-[10px] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none transition-transform duration-300"
     ></div>
     <header class="sticky top-0 z-10">
-      <nav class="px-20">
+      <nav class="p-8 lg:px-20">
         <div class="navBar flex justify-between items-center">
-          <div class="homeLogo z-20 tracking-tighter text-[35px] font-light">
+          <div class="homeLogo z-20 tracking-tighter font-light lg:text-[35px]">
             <a href="#">Sb.</a>
           </div>
           <div
-            class="burger z-20 flex flex-col justify-around cursor-pointer h-4"
+            class="burger z-20 flex flex-col justify-around cursor-pointer h-3 lg:h-4"
             onclick="toggleMenu()"
           >
             <div
-              class="line line1 w-12 h-[2px] bg-black transition-all duration-300"
+              class="line line1 w-6 h-[0.5px] bg-black transition-all duration-300 lg:w-12 lg:h-[2px]"
             ></div>
             <div
-              class="line line2 w-12 h-[2px] bg-black transition-all duration-300 opacity-0"
+              class="line line2 w-6 h-[0.5px] bg-black transition-all duration-300 opacity-0 lg:w-12 lg:h-[2px]"
             ></div>
             <div
-              class="line line3 w-12 h-[2px] bg-black transition-all duration-300"
+              class="line line3 w-6 h-[0.5px] bg-black transition-all duration-300 lg:w-12 lg:h-[2px]"
             ></div>
           </div>
         </div>
@@ -58,7 +58,7 @@
           class="hidden z-10 flex-col justify-center items-center absolute bottom-[52.5px] left-0 w-full h-[100vh] bg-white"
         >
           <ul
-            class="flex flex-col justify-center items-center h-full font-light text-9xl gap-10"
+            class="flex flex-col justify-center items-center h-full text-3xl font-light gap-10 lg:text-9xl"
             id="menu-text"
             onclick="toggleMenu()"
           >
@@ -70,38 +70,38 @@
       </nav>
     </header>
     <main>
-      <section
-        id="hero"
-        class="flex justify-center items-center h-[65vh] my-32"
-      >
-        <h1 class="font-light leading-tight w-[70vw] pb-[84px]" id="hero-text">
+      <section id="hero" class="">
+        <h1
+          class="flex justify-center items-center font-light leading-tight max-w-[65%] m-auto my-16 text-3xl lg:text-6xl 2xl:text-8xl"
+          id="hero-text"
+        >
           Hello, I am Sebastien, a freelance web developer, building fonctional
           websites & digital experiences.
         </h1>
       </section>
       <section
         id="about"
-        class="flex flex-row-reverse items-center pl-20 my-32"
+        class="flex flex-col items-center h-full mx-8 my-16 p-8 gap-16"
       >
         <div
-          class="imgAbout flex justify-center items-center animate-fadeInRight hover:scale-110"
+          class="imgAbout flex justify-center items-center animate-fadeInRight"
         >
           <img
             src="./assets/images/hero.jpg"
-            class="rounded-[70px] transition-all duration-500 ease-in-out w-full max-w-[50%] max-h-full"
+            class="rounded-[70px] transition-all duration-500 ease-in-out w-full max-w-[70%] max-h-full"
             alt="Dev Sebastien photography"
           />
         </div>
         <div class="textAbout text-left">
           <h2
             id="aboutTitle"
-            class="text-[24px] text-gray-400 pb-32 translate-x-[-1500px] transition-all duration-1000"
+            class="text-lg pb-8 text-gray-400 translate-x-[-1500px] transition-all duration-1000 lg:pb-32"
           >
             about me
           </h2>
           <p
             id="aboutText"
-            class="text-[20px] pl-20 translate-x-[-1200px] transition-all duration-1000"
+            class="text-lg pl-8 translate-x-[-1200px] transition-all duration-1000 lg:text-[20px]"
           >
             Body text for your whole article or post. We’ll put in some lorem
             ipsum to show how a filled-out page might look:
@@ -113,43 +113,51 @@
           </p>
         </div>
       </section>
-      <section id="works" class="my-60">
-        <h3 class="font-light mb-36">Selected Works</h3>
+      <section id="works" class="my-16">
+        <h3 class="text-3xl font-light py-8 relative">Selected Works</h3>
         <div
-          class="bg-gray-300 w-[100vw] h-[881px] relative flex justify-center items-center"
+          id="carouselBg"
+          class="bg-gray-300 w-[100vw] h-[450px] relative flex justify-center items-center opacity-0 transition-opacity duration-1000 ease-in-out"
         >
           <div class="carousel fade flex justify-center items-center w-full">
             <div class="flex justify-center image-container">
-              <img
-                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
-                src="./assets/images/ninaCapt.png"
-                alt="Printscreen of SEO project"
-                data-text="test"
-              />
+              <a href="https://github.com/SebdGv/nina-carducci" target="_blank">
+                <img
+                  class="carouselImage max-w-auto h-36 lg:h-[511px] m-2 rounded-[20px]"
+                  src="./assets/images/ninaCapt.png"
+                  alt="Printscreen of SEO project"
+                  data-content="seo"
+              /></a>
             </div>
             <div class="flex justify-center image-container">
-              <img
-                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
-                src="./assets/images/kasaCapt.png"
-                alt="Printscreen of SEO project"
-                data-text="html"
-              />
+              <a href="https://github.com/SebdGv/kasa" target="_blank">
+                <img
+                  class="carouselImage max-w-auto h-36 lg:h-[511px] m-2 rounded-[20px]"
+                  src="./assets/images/kasaCapt.png"
+                  alt="Printscreen of react.js project"
+                  data-content="react.js"
+              /></a>
             </div>
             <div class="flex justify-center">
-              <img
-                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
-                src="./assets/images/sophieCapt.png"
-                alt="Printscreen of SEO project"
-                data-text="react"
-              />
+              <a
+                href="https://github.com/SebdGv/SophieBluel-oc"
+                target="_blank"
+              >
+                <img
+                  class="carouselImage max-w-auto h-36 lg:h-[511px] m-2 rounded-[20px]"
+                  src="./assets/images/sophieCapt.png"
+                  alt="Printscreen of backend project"
+                  data-content="backend / node.js server"
+              /></a>
             </div>
             <div class="flex justify-center">
-              <img
-                class="carouselImage max-w-auto h-[511px] m-6 rounded-[20px]"
-                src="./assets/images/bookiCapt.png"
-                alt="Printscreen of SEO project"
-                data-text="JS"
-              />
+              <a href="https://sebdgv.github.io/Booki-oc/" target="_blank">
+                <img
+                  class="carouselImage max-w-auto h-36 lg:h-[511px] m-2 rounded-[20px]"
+                  src="./assets/images/bookiCapt.png"
+                  alt="Printscreen of html / css  responsive project"
+                  data-content="html / css"
+              /></a>
             </div>
           </div>
           <div
@@ -159,43 +167,43 @@
       </section>
       <section
         id="scrollBar"
-        class="w-full h-[600px] flex justify-center items-center my-60"
+        class="w-full flex justify-center items-center my-16 py-8"
       >
         <div class="containIcon flex whitespace-nowrap animate-scroll">
           <i
-            class="icon fa-brands fa-css3 fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-css3 fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
           <i
-            class="icon fa-brands fa-html5 fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-html5 fa-xl mr-36 transition-transform"
             style="color: #000000"
             aria-label="icon HTML5"
           ></i>
           <i
-            class="icon fa-brands fa-square-js fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-square-js fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
           <i
-            class="icon fa-brands fa-react fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-react fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
           <i
-            class="icon fa-brands fa-node fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-node fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
           <i
-            class="icon fa-brands fa-github fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-github fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
           <i
-            class="icon fa-brands fa-git fa-xs mr-36 transition-transform"
+            class="icon fa-brands fa-git fa-xl mr-36 transition-transform"
             style="color: #000000"
           ></i>
         </div>
       </section>
       <section
         id="contact"
-        class="flex flex-col justify-center items-center pb-80"
+        class="flex flex-col justify-center items-center my-16 py-8"
       >
         <h4 class="pb-10 font-light">You have a project ?</h4>
         <button
@@ -210,7 +218,7 @@
           >
           <a href="tel:+33698734989" class="font-light">+33 698734989</a>
           <i
-            class="fa-brands fa-linkedin fa-xs mt-14"
+            class="fa-brands fa-linkedin fa-xl mt-14"
             style="color: #ffffff"
           ></i>
         </div>
@@ -226,18 +234,11 @@
     <p class="text-gray-500 text-xs">
       &copy; 2024 sebastien berquez. All rights reserved.
     </p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
+      src="node_modules/slick-carousel/slick/slick.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./node_modules/slick-carousel/slick/slick.min.js"
-    ></script>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
