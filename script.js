@@ -1,175 +1,18 @@
-function toggleMenu() {
-  const burger = document.querySelector(".burger");
-  const menu = document.getElementById("menu");
-  const lines = document.querySelectorAll(".line");
-  const html = document.querySelector(".html");
-
-  burger.classList.toggle("open");
-  menu.classList.toggle("hidden");
-  menu.classList.toggle("translate-y-full");
-
-  lines[0].classList.toggle("transform");
-  lines[0].classList.toggle("translate-y-1.5");
-  lines[0].classList.toggle("rotate-45");
-
-  lines[2].classList.toggle("transform");
-  lines[2].classList.toggle("-translate-y-1.5");
-  lines[2].classList.toggle("-rotate-45");
-}
-
-// Cursor
-const cursor = document.querySelector(".cursor");
-let cursorX = 0;
-let cursorY = 0;
-
-window.addEventListener("mousemove", (e) => {
-  cursorX = e.clientX;
-  cursorY = e.clientY;
-  updateCursor();
-});
-
-window.addEventListener("scroll", updateCursor);
-
-function updateCursor() {
-  cursor.style.top = cursorY + window.scrollY + "px";
-  cursor.style.left = cursorX + window.scrollX + "px";
-}
-
-// cursor survol carousel
-const techCursor = () => {
-  const carouselImages = document.querySelectorAll(".carouselImage");
-  carouselImages.forEach((image) => {
-    const text = image.getAttribute("data-content");
-    image.addEventListener("mouseover", () => {
-      const activeSlide = image.closest(".slick-active");
-      if (activeSlide) {
-        cursor.classList.add("activeCursor");
-        cursor.textContent = text;
-      }
-    });
-    image.addEventListener("mouseleave", () => {
-      const activeSlide = image.closest(".slick-active");
-      if (activeSlide) {
-        cursor.classList.remove("activeCursor");
-        cursor.textContent = "";
-      }
-    });
-  });
-};
-
-techCursor();
-
-//==================================================================================================
-// Gestion animation in&out content
-//==================================================================================================
-
-// Apparition text-hero avec animation lettre par lettre
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const heroText = document.getElementById("hero-text");
-//   if (heroText) {
-//     const words = heroText.innerText.split(" ");
-//     heroText.innerHTML = words
-//       .map(
-//         (word, wordIndex) =>
-//           `<span class="inline-block">
-//           ${word
-//             .split("")
-//             .map(
-//               (letter, letterIndex) =>
-//                 `<span class="inline-block opacity-0 animate-fadeInBounce" style="animation-delay: ${
-//                   wordIndex * 0.1 + letterIndex * 0.03
-//                 }s;">${letter}</span>`
-//             )
-//             .join("")}
-//           </span>`
-//       )
-//       .join(
-//         '<span class="inline-block opacity-0" style="width: 0.5em;"></span>'
-//       );
-//   }
-// });
-
-// Scroll icons
+import { revealHeroText, scrollIcons } from "./js/animations.js";
+import { initCarousel } from "./js/carousel.js";
+import { initObservers } from "./js/intersectionObservers.js";
+import { toggleMenu } from "./js/menu.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const iconContainer = document.querySelector(".containIcon");
-  const icons = iconContainer.innerHTML;
-
-  // Dupliquer les icônes jusqu'à ce qu'elles remplissent la largeur de la fenêtre
-  const repeatTimes =
-    Math.ceil(window.innerWidth / iconContainer.clientWidth) * 4;
-  for (let i = 0; i < repeatTimes; i++) {
-    const clone = document.createElement("div");
-    clone.innerHTML = icons;
-    iconContainer.appendChild(clone);
-  }
-
-  // Ajouter un clone supplémentaire pour une transition plus fluide
-  const extraClone = document.createElement("div");
-  extraClone.innerHTML = icons;
-  iconContainer.appendChild(extraClone);
+  revealHeroText();
+  scrollIcons();
+  initObservers();
+  initCarousel();
 });
 
-// Apparition des éléments au scroll
+const burger = document.querySelector(".burger");
+burger.addEventListener("click", toggleMenu);
 
-document.addEventListener("scroll", () => {
-  const burgerLines = document.querySelectorAll(".line");
-  let scrollValue =
-    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-  console.log(scrollValue);
-  if (scrollValue >= 0.19) {
-    aboutTitle.classList.remove("translate-x-[-1500px]");
-  }
-  if (scrollValue >= 0.25) {
-    aboutText.classList.remove("translate-x-[-1200px]");
-  }
-  if (scrollValue >= 0.4) {
-    carouselBg.classList.remove("opacity-0");
-  }
-  if (scrollValue >= 0.92) {
-    body.classList.remove("bg-white");
-    body.classList.add("bg-black", "text-white");
-    menu.classList.remove("bg-white");
-    menu.classList.add("bg-black", "text-white");
-    contactBtn.classList.add("bg-white", "text-black");
-    contactBtn.classList.remove("text-white");
-
-    burgerLines.forEach((line) => {
-      line.classList.add("bg-white");
-    });
-  } else {
-    body.classList.remove("bg-black", "text-white");
-    body.classList.add("bg-white");
-    menu.classList.remove("bg-black", "text-white");
-    menu.classList.add("bg-white");
-    contactBtn.classList.add("bg-black", "text-white");
-    contactBtn.classList.remove("bg-white", "text-black");
-    burgerLines.forEach((line) => {
-      line.classList.remove("bg-white");
-    });
-  }
-});
-
-// Caroussel slick
-$(document).ready(function () {
-  $(".fade")
-    .slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      cssEase: "linear",
-      adaptiveHeight: true,
-      slidesToShow: 1, // Nombre de slides à montrer
-      slidesToScroll: 1, // Nombre de slides à défiler
-      centerMode: true, // Active le mode centré
-      centerPadding: "60px",
-      variableWidth: true,
-      appendDots: $(".dots"),
-      focusOnSelect: true,
-    })
-    .on("init", function () {
-      //  techCursor après init de Slick
-      techCursor();
-    });
+document.querySelectorAll("#menu a").forEach((link) => {
+  link.addEventListener("click", toggleMenu);
 });

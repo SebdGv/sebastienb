@@ -13,6 +13,14 @@ module.exports = {
           "80%": { opacity: 1, transform: "translateY(0px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        reveal: {
+          "0%": { opacity: 1, transform: "translateY(150%)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        revealMenu: {
+          "0%": { opacity: 1, transform: "translateY(150%)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
         fadeOut: {
           "0%": { opacity: 1, transform: "translateY(0)" },
           "60%": { opacity: 1, transform: "translateY(2px)" },
@@ -20,11 +28,7 @@ module.exports = {
           "100%": { opacity: 0, transform: "translateY(10px)" },
         },
         fadeInRight: {
-          "0%": { opacity: 0, transform: "translateX(3000px)" },
-          "80%": {
-            opacity: 0,
-            transform: "translateX(2000px)",
-          },
+          "0%": { opacity: 0, transform: "translateX(500px)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
         },
         scroll: {
@@ -34,9 +38,11 @@ module.exports = {
       },
       animation: {
         fadeInBounce: "fadeInBounce 1s ease-out forwards",
-        fadeOut: "fadeOut 1s ease-in forwards",
-        fadeInRight: "fadeInRight 2s ease-out forwards",
-        scroll: "scroll 70s linear infinite",
+        fadeOut: "fadeOut 1s ease-in-out forwards",
+        fadeInRight: "fadeInRight 1s ease-out forwards",
+        scroll: "scroll 200s linear infinite",
+        reveal: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",
+        revealMenu: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",
       },
     },
   },
