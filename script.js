@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// block pinch zoom on IOS
+// Disable zoom on mobile devices(IOS)
 document.addEventListener("gesturestart", function (e) {
   e.preventDefault();
 });
+// Set the initial scale to 1.0
+document
+  .querySelector("meta[name=viewport]")
+  .setAttribute("content", "initial-scale=1.0");
