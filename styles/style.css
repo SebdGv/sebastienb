@@ -768,6 +768,10 @@ video {
   height: 7rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -802,6 +806,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .max-w-\[50\%\] {
@@ -1048,6 +1056,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1213,6 +1226,14 @@ video {
 
   .sm\:h-60 {
     height: 15rem;
+  }
+
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
+  .sm\:w-52 {
+    width: 13rem;
   }
 
   .sm\:text-5xl {
