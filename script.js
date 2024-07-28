@@ -1,7 +1,7 @@
-import { revealHeroText, scrollIcons } from "/sebastienb/js/animations.js";
-import { initCarousel } from "/sebastienb/js/carousel.js";
-import { initObservers } from "/sebastienb/js/intersectionObservers.js";
-import { toggleMenu } from "/sebastienb/js/menu.js";
+import { revealHeroText, scrollIcons } from "./js/animations.js";
+import { initCarousel } from "./js/carousel.js";
+import { initObservers } from "./js/intersectionObservers.js";
+import { toggleMenu } from "./js/menu.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   revealHeroText();
