@@ -18,7 +18,3 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", toggleMenu);
   });
 });
-//block pinch zoom IOS
-document.addEventListener("gesturestart", function (e) {
-  e.preventDefault();
-});
