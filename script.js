@@ -10,13 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
   initCarousel();
 
   const burger = document.querySelector(".burger");
-  burger.addEventListener("click", () => {
-    toggleMenu();
-  });
+  if (burger) {
+    burger.addEventListener("click", () => {
+      toggleMenu();
+    });
+  } else {
+    console.error("Burger element not found");
+  }
 
-  document.querySelectorAll("#menu a").forEach((link) => {
-    link.addEventListener("click", toggleMenu);
-  });
+  const menuLinks = document.querySelectorAll("#menu a");
+  if (menuLinks.length > 0) {
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        console.log("Menu link clicked");
+        toggleMenu();
+      });
+    });
+  } else {
+    console.error("Menu links not found");
+  }
 });
 
 // Disable zoom on mobile devices(IOS)
