@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="fr"
-  class="html scroll-smooth overflow-x-hidden box-border h-full m-0 p-0"
+  class="html scroll-smooth overflow-x-hidden box-border h-full m-0 p-0 touch-pan-y"
 >
   <head>
     <meta charset="UTF-8" />
@@ -142,7 +142,7 @@
           </h2>
           <p
             id="aboutText"
-            class="text-sm pr-16 md:text-xl lg:text-2xlpl-8 opacity-0"
+            class="text-sm px-16 md:text-xl lg:text-2xlpl-8 opacity-0"
           >
             Passionate about web development, I create unique and functional
             digital experiences. My goal is to turn ideas into innovative and
@@ -168,6 +168,11 @@
           id="carouselBg"
           class="bg-gray-300 w-[100vw] h-[250px] min-[475px]:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] relative flex justify-center items-center opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden"
         >
+          <div
+            class="prev text-white absolute z-10 text-[35px] font-thin bg-black/50 px-4 rounded-full cursor-pointer left-[3%] border-2 border-white/70"
+          >
+            &lt;
+          </div>
           <div class="carousel fade flex justify-center items-center w-full">
             <div class="flex justify-center">
               <a
@@ -221,6 +226,11 @@
                   data-content="html / css"
               /></a>
             </div>
+          </div>
+          <div
+            class="next text-white absolute z-10 text-[35px] font-thin bg-black/50 px-4 rounded-full cursor-pointer right-[3%] border-2 border-white/70"
+          >
+            &gt;
           </div>
           <div
             class="dots absolute bottom-4 w-full flex justify-center items-center md:bottom-4 lg:bottom-1"

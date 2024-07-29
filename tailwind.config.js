@@ -17,10 +17,7 @@ module.exports = {
           "0%": { opacity: 1, transform: "translateY(150%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
-        revealMenu: {
-          "0%": { opacity: 1, transform: "translateY(150%)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
-        },
+
         fadeOut: {
           "0%": { opacity: 1, transform: "translateY(0)" },
           "60%": { opacity: 1, transform: "translateY(2px)" },
@@ -39,10 +36,9 @@ module.exports = {
       animation: {
         fadeInBounce: "fadeInBounce 1s ease-out forwards",
         fadeOut: "fadeOut 1s ease-in-out forwards",
-        fadeInRight: "fadeInRight 1s ease-out forwards",
+        fadeInRight: "fadeInRight 1.3s ease-in-out forwards",
         scroll: "scroll 200s linear infinite",
         reveal: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",
-        revealMenu: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",
       },
     },
   },

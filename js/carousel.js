@@ -18,6 +18,8 @@ export function initCarousel() {
         appendDots: $(".dots"),
         focusOnSelect: true,
         arrows: true,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next"),
       })
       .on("init", function () {
         //  techCursor après init de Slick
