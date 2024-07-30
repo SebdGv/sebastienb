@@ -89,3 +89,29 @@
   background: rgba(245, 245, 245, 0.801);
   border-radius: 10px;
 }
+
+/* Burger Menu */
+.burger.open .line1 {
+  transform: translateY(4px) rotate(45deg);
+}
+.burger.open .line3 {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.menu.hidden {
+  display: none;
+}
+
+html.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .burger.open .line1 {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .burger.open .line3 {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}

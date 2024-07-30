@@ -55,6 +55,7 @@ export async function initCarousel() {
       arrows: true,
       prevArrow: $(".prev"),
       nextArrow: $(".next"),
+      draggable: true,
     })
     .on("init", function () {
       //  techCursor après init de Slick
