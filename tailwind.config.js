@@ -7,23 +7,11 @@ module.exports = {
         custom: ["SpaceGrotesk", "sans-serif"],
       },
       keyframes: {
-        fadeInBounce: {
-          "0%": { opacity: 1, transform: "translateY(0px)" },
-          "60%": { opacity: 1, transform: "translateY(0px)" },
-          "80%": { opacity: 1, transform: "translateY(0px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
-        },
         reveal: {
           "0%": { opacity: 1, transform: "translateY(150%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
 
-        fadeOut: {
-          "0%": { opacity: 1, transform: "translateY(0)" },
-          "60%": { opacity: 1, transform: "translateY(2px)" },
-          "80%": { opacity: 0.5, transform: "translateY(-5px)" },
-          "100%": { opacity: 0, transform: "translateY(10px)" },
-        },
         fadeInRight: {
           "0%": { opacity: 0, transform: "translateX(500px)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
@@ -34,8 +22,6 @@ module.exports = {
         },
       },
       animation: {
-        fadeInBounce: "fadeInBounce 1s ease-out forwards",
-        fadeOut: "fadeOut 1s ease-in-out forwards",
         fadeInRight: "fadeInRight 1.3s ease-in-out forwards",
         scroll: "scroll 150s linear infinite",
         reveal: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",

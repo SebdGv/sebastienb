@@ -68,16 +68,17 @@
     <div
       class="cursor lg:bg-[#ffffff] text-white text-[10px] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none transition-transform duration-300 max-lg:hidden"
     ></div>
-    <header class="top-0 z-10 min-h-[60px]">
+    <header class="fixed top-0 z-30 w-full min-h-[60px]">
       <nav class="p-8 lg:px-20">
         <div class="navBar flex justify-between items-center">
           <div
-            class="homeLogo z-20 tracking-tighter font-light sm:text-xl lg:text-[35px]"
+            class="homeLogo z-30 tracking-tighter font-light sm:text-xl lg:text-[35px]"
           >
             <a href="#">Sb.</a>
           </div>
+          <!-- <div class="burgerHover"></div> -->
           <div
-            class="burger z-20 flex flex-col justify-around cursor-pointer h-3 lg:h-4"
+            class="burger z-30 flex flex-col justify-around cursor-pointer h-3 lg:h-4"
           >
             <div
               class="line line1 w-6 h-[0.5px] bg-black transition-all duration-300 lg:w-12 lg:h-[2px]"
@@ -92,7 +93,7 @@
         </div>
         <div
           id="menu"
-          class="hidden z-10 flex-col justify-center items-center absolute left-0 top-0 w-full h-[100vh] bg-white"
+          class="hidden z-20 flex-col justify-center items-center absolute left-0 top-0 w-full h-[100vh] bg-white"
         >
           <ul
             class="flex flex-col justify-center items-center h-full text-3xl font-light gap-10 sm:text-5xl lg:text-9xl"
@@ -122,7 +123,7 @@
       </section>
       <section
         id="about"
-        class="flex flex-col justify-between h-full max-w-[100vw] mx-8 my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 p-8 lg:pl-14 gap-16 md:flex-row-reverse"
+        class="flex flex-col justify-between h-full max-w-[100vw] mx-8 my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 2xl:mx-64 p-8 lg:pl-14 gap-16 md:flex-row-reverse"
       >
         <div
           class="imgAbout flex justify-center items-center animate-fadeInRight"
@@ -218,7 +219,7 @@
       </section>
       <section
         id="contact"
-        class="flex flex-col justify-center items-center my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 py-8 snap-center"
+        class="flex flex-col justify-center items-center my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 2xl:mx-64 py-8 snap-center"
       >
         <h4
           class="pb-8 lg:pb-16 font-light text-2xl sm:text-5xl lg:text-6xl xl:text-8xl"
@@ -242,9 +243,9 @@
             class="font-light text-2xl sm:text-5xl lg:text-6xl xl:text-8xl"
             >+33 698734989</a
           >
-          <a href="">
+          <!-- <a href="">
             <i class="fa-solid fa-download fa-2xl mt-14 font-light"> cv </i></a
-          >
+          > -->
           <a
             href="https://www.linkedin.com/in/sébastien-berquez-7a56912ba"
             target="_blank"

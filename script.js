@@ -1,9 +1,10 @@
-import { revealHeroText, scrollIcons } from "./js/animations.js";
+import { hoverEffect, revealHeroText, scrollIcons } from "./js/animations.js";
 import { initCarousel } from "./js/carousel.js";
 import { initObservers } from "./js/intersectionObservers.js";
 import { toggleMenu } from "./js/menu.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  hoverEffect();
   revealHeroText();
   scrollIcons();
   initObservers();
