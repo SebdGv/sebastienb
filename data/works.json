@@ -1,0 +1,26 @@
+[
+  {
+    "image": "./assets/images/ninaCapt.jpg",
+    "link": "https://github.com/SebdGv/nina-carducci",
+    "dataContent": "seo project",
+    "altText": "Printscreen of SEO project"
+  },
+  {
+    "image": "./assets/images/kasaCapt.jpg",
+    "link": "https://github.com/SebdGv/kasa",
+    "dataContent": "react.js",
+    "altText": "Printscreen of react.js project"
+  },
+  {
+    "image": "./assets/images/sophieCapt.jpg",
+    "link": "https://github.com/SebdGv/SophieBluel-oc",
+    "dataContent": "node.js server",
+    "altText": "Printscreen of backend project"
+  },
+  {
+    "image": "./assets/images/bookiCapt.jpg",
+    "link": "https://sebdgv.github.io/Booki-oc/",
+    "dataContent": "html / css",
+    "altText": "Printscreen of html / css responsive project"
+  }
+]

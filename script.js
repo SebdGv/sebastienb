@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Burger element not found");
   }
 
-  const menuLinks = document.querySelectorAll("#menu a");
+  const menuLinks = document.querySelectorAll("#menu");
   if (menuLinks.length > 0) {
     menuLinks.forEach((link) => {
       link.addEventListener("click", () => {
@@ -35,7 +35,3 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("gesturestart", function (e) {
   e.preventDefault();
 });
-// Set the initial scale to 1.0
-document
-  .querySelector("meta[name=viewport]")
-  .setAttribute("content", "initial-scale=1.0");
