@@ -18,19 +18,7 @@ export async function initCarousel() {
     workImage.src = work.image;
     workImage.alt = work.altText;
     workImage.dataset.content = work.dataContent;
-    workImage.classList.add(
-      "carouselImage",
-      "m-2",
-      "rounded-[20px]",
-      "h-28",
-      "min-[475px]:h-48",
-      "sm:h-60",
-      "sm:m-6",
-      "md:h-80",
-      "lg:h-96",
-      "xl:h-[450px]",
-      "2xl:mx-16"
-    );
+    workImage.classList.add("carouselImage");
 
     workLink.appendChild(workImage);
     workItem.appendChild(workLink);
@@ -55,7 +43,6 @@ export async function initCarousel() {
       arrows: true,
       prevArrow: $(".prev"),
       nextArrow: $(".next"),
-      draggable: true,
     })
     .on("init", function () {
       //  techCursor après init de Slick

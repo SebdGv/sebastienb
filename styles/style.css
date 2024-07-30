@@ -662,6 +662,10 @@ video {
   margin: 0px;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -706,6 +710,10 @@ video {
 
 .h-20 {
   height: 5rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .h-3 {
@@ -891,6 +899,10 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
 }
 
 .rounded-\[70px\] {
@@ -1187,6 +1199,61 @@ html.overflow-hidden {
   }
 }
 
+.carouselImage {
+  margin: 0.5rem;
+  /* m-2 */
+  border-radius: 20px;
+  /* rounded-[20px] */
+  height: 7rem;
+  /* h-28 */
+}
+
+@media (min-width: 475px) {
+  .carouselImage {
+    height: 12rem;
+    /* min-[475px]:h-48 */
+  }
+}
+
+@media (min-width: 640px) {
+  .carouselImage {
+    height: 15rem;
+    /* sm:h-60 */
+    margin: 1.5rem;
+    /* sm:m-6 */
+  }
+}
+
+@media (min-width: 768px) {
+  .carouselImage {
+    height: 20rem;
+    /* md:h-80 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .carouselImage {
+    height: 24rem;
+    /* lg:h-96 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .carouselImage {
+    height: 28.125rem;
+    /* xl:h-[450px] */
+  }
+}
+
+@media (min-width: 1536px) {
+  .carouselImage {
+    margin-left: 4rem;
+    /* 2xl:mx-16 */
+    margin-right: 4rem;
+    /* 2xl:mx-16 */
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -1215,12 +1282,20 @@ html.overflow-hidden {
 }
 
 @media (min-width: 475px) {
+  .min-\[475px\]\:h-48 {
+    height: 12rem;
+  }
+
   .min-\[475px\]\:h-\[450px\] {
     height: 450px;
   }
 }
 
 @media (min-width: 640px) {
+  .sm\:m-6 {
+    margin: 1.5rem;
+  }
+
   .sm\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -1228,6 +1303,10 @@ html.overflow-hidden {
 
   .sm\:h-20 {
     height: 5rem;
+  }
+
+  .sm\:h-60 {
+    height: 15rem;
   }
 
   .sm\:w-52 {
@@ -1253,6 +1332,10 @@ html.overflow-hidden {
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:h-\[550px\] {
@@ -1287,16 +1370,16 @@ html.overflow-hidden {
     height: 1rem;
   }
 
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
   .lg\:h-\[2px\] {
     height: 2px;
   }
 
   .lg\:h-\[650px\] {
     height: 650px;
-  }
-
-  .lg\:w-16 {
-    width: 4rem;
   }
 
   .lg\:w-12 {
@@ -1357,6 +1440,10 @@ html.overflow-hidden {
     margin-bottom: 8rem;
   }
 
+  .xl\:h-\[450px\] {
+    height: 450px;
+  }
+
   .xl\:h-\[750px\] {
     height: 750px;
   }
@@ -1373,6 +1460,11 @@ html.overflow-hidden {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .\32xl\:my-36 {
     margin-top: 9rem;
     margin-bottom: 9rem;

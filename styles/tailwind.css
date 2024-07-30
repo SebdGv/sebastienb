@@ -115,3 +115,47 @@ html.overflow-hidden {
     transform: translateY(-5px) rotate(-45deg);
   }
 }
+
+.carouselImage {
+  margin: 0.5rem; /* m-2 */
+  border-radius: 20px; /* rounded-[20px] */
+  height: 7rem; /* h-28 */
+}
+
+@media (min-width: 475px) {
+  .carouselImage {
+    height: 12rem; /* min-[475px]:h-48 */
+  }
+}
+
+@media (min-width: 640px) {
+  .carouselImage {
+    height: 15rem; /* sm:h-60 */
+    margin: 1.5rem; /* sm:m-6 */
+  }
+}
+
+@media (min-width: 768px) {
+  .carouselImage {
+    height: 20rem; /* md:h-80 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .carouselImage {
+    height: 24rem; /* lg:h-96 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .carouselImage {
+    height: 28.125rem; /* xl:h-[450px] */
+  }
+}
+
+@media (min-width: 1536px) {
+  .carouselImage {
+    margin-left: 4rem; /* 2xl:mx-16 */
+    margin-right: 4rem; /* 2xl:mx-16 */
+  }
+}
