@@ -786,6 +786,10 @@ video {
   height: 50%;
 }
 
+.h-\[70\%\] {
+  height: 70%;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1481,6 +1485,10 @@ html.overflow-hidden {
 
   .md\:h-\[550px\] {
     height: 550px;
+  }
+
+  .md\:h-\[50\%\] {
+    height: 50%;
   }
 
   .md\:w-1\/2 {
