@@ -714,8 +714,8 @@ video {
   margin-bottom: auto;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mr-36 {
@@ -724,10 +724,6 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .box-border {
@@ -774,6 +770,10 @@ video {
   height: 250px;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .h-auto {
   height: auto;
 }
@@ -782,16 +782,12 @@ video {
   height: 100%;
 }
 
-.h-\[50\%\] {
+.h-1\/2 {
   height: 50%;
 }
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-\[50\%\] {
-  max-height: 50%;
 }
 
 .min-h-\[60px\] {
@@ -802,8 +798,8 @@ video {
   min-height: 100vh;
 }
 
-.min-h-\[50\%\] {
-  min-height: 50%;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-20 {
@@ -834,8 +830,8 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-auto {
+  width: auto;
 }
 
 .max-w-4xl {
@@ -866,20 +862,6 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fade {
-  animation: fade 0.25s ease-out forwards;
 }
 
 @keyframes fadeInRight {
@@ -945,16 +927,8 @@ video {
   flex-direction: column;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1013,11 +987,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -1054,16 +1023,6 @@ video {
      object-fit: contain;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-0 {
   padding: 0px;
 }
@@ -1074,10 +1033,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-16 {
@@ -1110,6 +1065,10 @@ video {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-left {
@@ -1524,17 +1483,39 @@ html.overflow-hidden {
     height: 550px;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:min-w-80 {
     min-width: 20rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1564,8 +1545,24 @@ html.overflow-hidden {
     height: 650px;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:h-\[50\%\] {
+    height: 50%;
+  }
+
   .lg\:w-12 {
     width: 3rem;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
   }
 
   .lg\:bg-\[\#ffffff\] {
@@ -1614,6 +1611,11 @@ html.overflow-hidden {
   .lg\:text-\[35px\] {
     font-size: 35px;
   }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1645,6 +1647,11 @@ html.overflow-hidden {
   .\32xl\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .\32xl\:mx-36 {
+    margin-left: 9rem;
+    margin-right: 9rem;
   }
 
   .\32xl\:mx-64 {
