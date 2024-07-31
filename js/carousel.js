@@ -11,6 +11,19 @@ export async function initCarousel() {
       return;
     }
 
+    // Fonction pour charger les images
+    const loadImage = (src) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    };
+
+    const imagePromises = data.map((work) => loadImage(work.previewImage));
+    await Promise.all(imagePromises);
+
     data.forEach((work) => {
       const workItem = document.createElement("div");
       workItem.classList.add("flex", "justify-center");
