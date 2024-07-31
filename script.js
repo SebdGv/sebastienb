@@ -33,8 +33,3 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Menu links not found");
   }
 });
-
-// Disable zoom on mobile devices(IOS)
-document.addEventListener("gesturestart", function (e) {
-  e.preventDefault();
-});
