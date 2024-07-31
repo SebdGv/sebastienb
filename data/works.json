@@ -1,26 +1,55 @@
 [
   {
-    "image": "./assets/images/ninaCapt.jpg",
+    "previewImage": "./assets/images/ninaCapt.jpg",
+    "altText": "Nina Carducci. printscreen",
+    "modalImages": [
+      "./assets/images/ninaCapt.jpg",
+      "./assets/images/ninaCapt2.jpg",
+      "./assets/images/ninaCapt1.jpg"
+    ],
     "link": "https://github.com/SebdGv/nina-carducci",
     "title": "Nina Carducci.",
-    "description": "Debug and improve a website. - OpenClassrooms project."
+    "description": " I worked on debugging and improving the Nina Carducci website using Chrome DevTools. The main tasks involved identifying and fixing various bugs, optimizing the site’s performance, and enhancing the overall user experience by updating the HTML and CSS.",
+    "techno": "chrome devTools - html - css - javascript"
   },
   {
-    "image": "./assets/images/kasaCapt.jpg",
+    "previewImage": "./assets/images/kasaCapt.jpg",
+    "altText": "Kasa. printscreen",
+    "modalImages": [
+      "./assets/images/kasaCapt.jpg",
+      "./assets/images/kasaCapt1.jpg",
+      "./assets/images/kasaCapt2.jpg"
+    ],
     "link": "https://github.com/SebdGv/kasa",
     "title": "Kasa.",
-    "description": "Integration of a mockup with react.js - OpenClassrooms project."
+    "description": " For this project, I developed the front end of a housing rental site using React. I was responsible for transforming a static mockup into a dynamic and fully functional website. This included creating reusable React components, managing application state, and ensuring the user interface was both responsive and intuitive.",
+    "techno": "react.js - javascript - html - css"
   },
   {
-    "image": "./assets/images/sophieCapt.jpg",
+    "previewImage": "./assets/images/sophieCapt.jpg",
+    "altText": "Sophie Bluel. printscreen",
+    "modalImages": [
+      "./assets/images/sophieCapt.jpg",
+      "./assets/images/sophieCapt1.jpg",
+      "./assets/images/sophieCapt2.jpg"
+    ],
     "link": "https://github.com/SebdGv/SophieBluel-oc",
     "title": "Sophie Bluel.",
-    "description": "Backend development of a website with node.js server - OpenClassrooms project."
+    "description": "In this project, I focused on backend development for the Sophie Bluel website. My responsibilities included building the server using Node.js and Express, and implementing a MongoDB database to manage and store data efficiently. This project enhanced my skills in server-side programming and database management.",
+    "techno": "node.js - express - mongoDB"
   },
   {
-    "image": "./assets/images/bookiCapt.jpg",
+    "previewImage": "./assets/images/bookiCapt.jpg",
+    "altText": "Booki. printscreen",
+    "modalImages": [
+      "./assets/images/bookiCapt.jpg",
+      "./assets/images/bookiCapt1.jpg",
+      "./assets/images/bookiCapt3.jpg",
+      "./assets/images/bookiCapt2.jpg"
+    ],
     "link": "https://sebdgv.github.io/Booki-oc/",
     "title": "Booki.",
-    "description": "Integration of a responsive website with HTML and CSS - OpenClassrooms project."
+    "description": "For the Booki project, I created a fully responsive website using HTML and CSS. The objective was to ensure the site was accessible on various devices, including desktops, tablets, and smartphones, while maintaining a consistent and appealing design. This project helped me to refine my skills in responsive web design and front-end development.",
+    "techno": "html - css - javascript"
   }
 ]

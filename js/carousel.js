@@ -1,4 +1,4 @@
-import { fetchWorks } from "./fetchWorks.js"; // Assure-toi d'importer cette fonction
+import { fetchWorks } from "./fetchWorks.js";
 import { openModal } from "./modal.js";
 
 export async function initCarousel() {
@@ -16,34 +16,30 @@ export async function initCarousel() {
       workItem.classList.add("flex", "justify-center");
 
       const workImage = document.createElement("img");
-      workImage.src = work.image;
+      workImage.src = work.previewImage;
       workImage.alt = work.altText;
-      workImage.dataset.content = work.dataContent;
+
       workImage.classList.add("carouselImage");
       workImage.classList.add("cursor-pointer");
-      workImage.dataset.link = work.link;
-      workImage.dataset.title = work.title;
-      workImage.dataset.description = work.description;
 
-      // Ajouter l'événement de clic pour ouvrir la modale
-      workImage.addEventListener("click", (event) => {
-        openModal(workImage);
+      // Passer l'objet work à openModal
+      workImage.addEventListener("click", () => {
+        openModal(work);
       });
 
-      workItem.appendChild(workImage); // Ajouter l'image directement à workItem
-      carousel.appendChild(workItem); // Ajouter workItem au carousel
+      workItem.appendChild(workImage);
+      carousel.appendChild(workItem);
     });
 
-    // Initialize Slick Carousel
     $(carousel).slick({
       dots: true,
       infinite: true,
       speed: 300,
       cssEase: "linear",
       adaptiveHeight: true,
-      slidesToShow: 1, // Nombre de slides à montrer
-      slidesToScroll: 1, // Nombre de slides à défiler
-      centerMode: true, // Active le mode centré
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
       centerPadding: "60px",
       variableWidth: true,
       appendDots: $(".dots"),
