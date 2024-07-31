@@ -1,33 +1,41 @@
-import { techCursor } from "./cursor.js";
-import { fetchWorks } from "./fetchWorks.js";
+import { fetchWorks } from "./fetchWorks.js"; // Assure-toi d'importer cette fonction
+import { openModal } from "./modal.js";
 
 export async function initCarousel() {
-  const data = await fetchWorks();
-  const carousel = document.getElementById("carousel");
+  try {
+    const data = await fetchWorks();
+    const carousel = document.getElementById("carousel");
 
-  data.forEach((work) => {
-    const workItem = document.createElement("div");
-    workItem.classList.add("flex", "justify-center");
+    if (!carousel) {
+      console.error("Carousel element not found");
+      return;
+    }
 
-    const workLink = document.createElement("a");
-    workLink.href = work.link;
-    workLink.target = "_blank";
-    workLink.classList.add("links");
+    data.forEach((work) => {
+      const workItem = document.createElement("div");
+      workItem.classList.add("flex", "justify-center");
 
-    const workImage = document.createElement("img");
-    workImage.src = work.image;
-    workImage.alt = work.altText;
-    workImage.dataset.content = work.dataContent;
-    workImage.classList.add("carouselImage");
+      const workImage = document.createElement("img");
+      workImage.src = work.image;
+      workImage.alt = work.altText;
+      workImage.dataset.content = work.dataContent;
+      workImage.classList.add("carouselImage");
+      workImage.classList.add("cursor-pointer");
+      workImage.dataset.link = work.link;
+      workImage.dataset.title = work.title;
+      workImage.dataset.description = work.description;
 
-    workLink.appendChild(workImage);
-    workItem.appendChild(workLink);
-    carousel.appendChild(workItem);
-  });
+      // Ajouter l'événement de clic pour ouvrir la modale
+      workImage.addEventListener("click", (event) => {
+        openModal(workImage);
+      });
 
-  // Initialize Slick Carousel
-  $(carousel)
-    .slick({
+      workItem.appendChild(workImage); // Ajouter l'image directement à workItem
+      carousel.appendChild(workItem); // Ajouter workItem au carousel
+    });
+
+    // Initialize Slick Carousel
+    $(carousel).slick({
       dots: true,
       infinite: true,
       speed: 300,
@@ -39,14 +47,11 @@ export async function initCarousel() {
       centerPadding: "60px",
       variableWidth: true,
       appendDots: $(".dots"),
-      focusOnSelect: true,
       arrows: true,
       prevArrow: $(".prev"),
       nextArrow: $(".next"),
-    })
-    .on("init", function () {
-      //  techCursor après init de Slick
-      techCursor();
     });
-  techCursor(document.querySelector(".cursor"));
+  } catch (error) {
+    console.error(error);
+  }
 }

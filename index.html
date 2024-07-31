@@ -112,7 +112,7 @@
       <section id="hero" class="my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32">
         <div class="relative overflow-hidden">
           <h1
-            class="text-center font-light leading-tight w-[65%] max-w-[900px] m-auto py-8 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl"
+            class="text-center font-light leading-tight w-[65%] max-w-[900px] m-auto my-32 py-8 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl"
           >
             <span class="block opacity-0 animate-reveal">
               Hello, I am Sebastien, a freelance web developer, building
@@ -167,10 +167,10 @@
         </h3>
         <div
           id="carouselBg"
-          class="bg-gray-300 w-[100vw] h-[250px] min-[475px]:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] relative flex justify-center items-center opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden"
+          class="bg-gray-200 w-[100vw] h-[250px] min-[475px]:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] relative flex justify-center items-center opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden"
         >
           <div
-            class="prev text-white absolute z-10 text-[35px] font-thin bg-black/50 px-4 rounded-full cursor-pointer left-[3%] border-2 border-white/70"
+            class="prev text-white absolute z-10 text-[35px] font-thin bg-black/90 px-4 rounded-full cursor-pointer left-[3%] border-2 border-white/70"
           >
             &lt;
           </div>
@@ -179,13 +179,43 @@
             class="carousel flex justify-center items-center"
           ></div>
           <div
-            class="next text-white absolute z-10 text-[35px] font-thin bg-black/50 px-4 rounded-full cursor-pointer right-[3%] border-2 border-white/70"
+            class="next text-white absolute z-10 text-[35px] font-thin bg-black/90 px-4 rounded-full cursor-pointer right-[3%] border-2 border-white/70"
           >
             &gt;
           </div>
           <div
             class="dots absolute bottom-4 w-full flex justify-center items-center md:bottom-4 lg:bottom-1"
           ></div>
+        </div>
+        <!-- Modal -->
+        <div
+          id="modalBackground"
+          class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden animate-fade"
+        >
+          <div
+            id="modal"
+            class="relative w-[80%] max-w-4xl h-auto flex flex-col bg-gray-200 rounded-3xl overflow-hidden shadow-lg"
+          >
+            <button
+              id="closeModal"
+              class="absolute top-4 right-8 text-2xl text-black hover:text-gray-500"
+            >
+              x
+            </button>
+            <img
+              id="modalImage"
+              src=""
+              alt=""
+              class="w-full h-auto rounded-t-3xl"
+            />
+            <div class="p-6 text-center">
+              <h3 id="modalTitle" class="text-2xl mb-4"></h3>
+              <p id="modalDescription" class="text-base mb-4"></p>
+              <a id="modalLink" href="#" target="_blank" class="underline"
+                >Visit project</a
+              >
+            </div>
+          </div>
         </div>
       </section>
       <section
@@ -228,7 +258,7 @@
         </h4>
         <button
           id="contactBtn"
-          class="hover:animate-bounce w-40 h-16 sm:w-52 sm:h-20 rounded-full flex items-center justify-center text-sm sm:text-xl transition-all duration-500 ease-in-out"
+          class="hover:animate-pulse w-40 h-16 sm:w-52 sm:h-20 rounded-full flex items-center justify-center text-sm sm:text-xl transition-all duration-500 ease-in-out"
         >
           <a href="mailto:bes.dgv@gmail.com" class="text-black">Let's talk</a>
         </button>

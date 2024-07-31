@@ -11,7 +11,10 @@ module.exports = {
           "0%": { opacity: 1, transform: "translateY(150%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
-
+        fade: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
         fadeInRight: {
           "0%": { opacity: 0, transform: "translateX(500px)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
@@ -23,6 +26,7 @@ module.exports = {
       },
       animation: {
         fadeInRight: "fadeInRight 1.3s ease-in-out forwards",
+        fade: "fade 0.25s ease-out forwards",
         scroll: "scroll 150s linear infinite",
         reveal: "reveal 1.5s cubic-bezier(1,.97,.52,1.05) forwards",
       },

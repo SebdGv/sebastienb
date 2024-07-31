@@ -2,25 +2,25 @@
   {
     "image": "./assets/images/ninaCapt.jpg",
     "link": "https://github.com/SebdGv/nina-carducci",
-    "dataContent": "seo project",
-    "altText": "Printscreen of SEO project"
+    "title": "Nina Carducci.",
+    "description": "Debug and improve a website. - OpenClassrooms project."
   },
   {
     "image": "./assets/images/kasaCapt.jpg",
     "link": "https://github.com/SebdGv/kasa",
-    "dataContent": "react.js",
-    "altText": "Printscreen of react.js project"
+    "title": "Kasa.",
+    "description": "Integration of a mockup with react.js - OpenClassrooms project."
   },
   {
     "image": "./assets/images/sophieCapt.jpg",
     "link": "https://github.com/SebdGv/SophieBluel-oc",
-    "dataContent": "node.js server",
-    "altText": "Printscreen of backend project"
+    "title": "Sophie Bluel.",
+    "description": "Backend development of a website with node.js server - OpenClassrooms project."
   },
   {
     "image": "./assets/images/bookiCapt.jpg",
     "link": "https://sebdgv.github.io/Booki-oc/",
-    "dataContent": "html / css",
-    "altText": "Printscreen of html / css responsive project"
+    "title": "Booki.",
+    "description": "Integration of a responsive website with HTML and CSS - OpenClassrooms project."
   }
 ]
