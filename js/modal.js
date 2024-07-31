@@ -26,6 +26,12 @@ function closeModal() {
 document.getElementById("closeModal").addEventListener("click", () => {
   closeModal();
 });
+// Close the modal when pressing the escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
 
 // Close the modal when clicking outside of the content
 document.getElementById("modalBackground").addEventListener("click", (e) => {
