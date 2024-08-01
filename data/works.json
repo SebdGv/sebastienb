@@ -35,7 +35,7 @@
     ],
     "link": "https://github.com/SebdGv/monVieuxGrimoire",
     "title": "Mon vieux grimoire.",
-    "description": "In this project, I focused on backend development for the Sophie Bluel website. My responsibilities included building the server using Node.js and Express, and implementing a MongoDB database to manage and store data efficiently. This project enhanced my skills in server-side programming and database management.",
+    "description": "In this project, I focused on backend development for Mon Vieux grimoire website. My responsibilities included building the server using Node.js and Express, and implementing a MongoDB database to manage and store data efficiently. This project enhanced my skills in server-side programming and database management.",
     "techno": "node.js - express - mongoDB"
   },
   {
