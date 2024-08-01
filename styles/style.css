@@ -995,6 +995,10 @@ video {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-white\/70 {
   border-color: rgb(255 255 255 / 0.7);
 }
@@ -1057,6 +1061,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-16 {
@@ -1128,6 +1142,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-light {
@@ -1479,6 +1497,10 @@ html.overflow-hidden {
     margin-bottom: 6rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -1537,6 +1559,10 @@ html.overflow-hidden {
     margin-bottom: 7rem;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:h-4 {
     height: 1rem;
   }
@@ -1573,6 +1599,10 @@ html.overflow-hidden {
     width: 80%;
   }
 
+  .lg\:border-2 {
+    border-width: 2px;
+  }
+
   .lg\:bg-\[\#ffffff\] {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1591,6 +1621,11 @@ html.overflow-hidden {
   .lg\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:pb-16 {
