@@ -5,7 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "build": "npm run clean && parcel build index.html --dist-dir dist && npm run copy-assets",
-    "copy-assets": "copyfiles -u 1 'data/**/*' dist/data/ && copyfiles -u 1 'assets/images/**/*' dist/assets/images/"
+    "copy-assets": "copyfiles -u 1 'data/**/*' dist/ && copyfiles -u 1 'assets/images/**/*' dist/assets/images/"
   },
   "keywords": [],
   "author": "",
