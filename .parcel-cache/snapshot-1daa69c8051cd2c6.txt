@@ -155,7 +155,7 @@
 108C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select133673665987450154 1
 96C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\dom-serializer\lib\esm\foreignNames.js133673665983422270 0
 103C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\package-json-from-dist\dist\commonjs\index.js133668525217704971 0
-57C:\Users\besdg\Documents\workFlow\sebastienb\package.json133673696691117658 0
+57C:\Users\besdg\Documents\workFlow\sebastienb\package.json133673702479105018 0
 106C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\picture-in-picture.js133668525224246565 0
 114C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\node_modules\css-tree\lib\generator\token-before.js133673666001963279 0
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\commander\package.json133668525218180427 0
@@ -4546,7 +4546,7 @@
 97C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\node_modules\css-tree\package.json133673666002462085 0
 71C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\lib133673665987430161 1
 93C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\jquery\src\manipulation\_evalUrl.js133668525217704971 0
-73C:\Users\besdg\Documents\workFlow\sebastienb\.github\workflows\deploy.yml133673672179728697 0
+73C:\Users\besdg\Documents\workFlow\sebastienb\.github\workflows\deploy.yml133673703863353926 0
 75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\LICENSE133673665982920656 0
 79C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\emoji-regex\text.d.ts133668525219449764 0
 77C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\README.md133673665986961158 0
