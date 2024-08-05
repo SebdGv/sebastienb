@@ -1,4 +1,4 @@
-9221
+9220
 85C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@alloc\quick-lru\index.d.ts133668525218595903 0
 73C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\globals\license133673665984248802 0
 74C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\timsort\index.js133673665983897857 0
@@ -21,14 +21,14 @@
 108C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg133673666003462973 1
 54C:\Users\besdg\Documents\workFlow\sebastienb\README.md133673686651451436 0
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\workers\src\web\WebWorker.js133673665992338054 0
-76C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\.package-lock.json133673696691906049 0
+76C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\.package-lock.json133673710970563035 0
 120C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\yargs\build\lib\completion-templates.js133673696690504953 0
 127C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDoctype.js133673665988382200 0
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\sucrase\dist\types\computeSourceMap.d.ts133668525221685316 0
 107C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest2.c133673665989949172 0
 67C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\picomatch133668525219202806 1
 88C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\node_modules\css-tree\cjs133673665999958626 1
-49C:\Users\besdg\Documents\workFlow\sebastienb\dist133673678629095572 1
+49C:\Users\besdg\Documents\workFlow\sebastienb\dist133673717341044973 1
 107C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\css-relative-colors.js133668525222202928 0
 93C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\ts-interface-checker\dist\util.d.ts133668525219085220 0
 89C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\cjs\replace\Percentage.cjs133673665987661414 0
@@ -123,7 +123,7 @@
 93C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\src\util\pluginUtils.js133668525222086633 0
 88C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\type-fest\source\value-of.d.ts133673665988010542 0
 107C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\once-event-listener.js133668525224143916 0
-57C:\Users\besdg\Documents\workFlow\sebastienb\node_modules133673696691117658 1
+57C:\Users\besdg\Documents\workFlow\sebastienb\node_modules133673710969769073 1
 87C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\lib\walker\create.js133673665994496764 0
 92C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\didyoumean\didYouMean-1.2.1.min.js133668525218082963 0
 82C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\lib\parse.d.ts133673665987440180 0
@@ -134,7 +134,7 @@
 107C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@babel\helper-validator-identifier\lib\keyword.js133673665985424377 0
 82C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yargs\locales\uk_UA.json133668525220561075 0
 84C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\entities\lib\maps\xml.json133673665986461632 0
-62C:\Users\besdg\Documents\workFlow\sebastienb\package-lock.json133673696691749605 0
+62C:\Users\besdg\Documents\workFlow\sebastienb\package-lock.json133673710970263537 0
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\normalize-path\LICENSE133668525218060864 0
 71C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\shebang-regex133668525218420151 1
 96C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\cliui\node_modules\emoji-regex\text.js133668525218738150 0
@@ -155,7 +155,7 @@
 108C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select133673665987450154 1
 96C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\dom-serializer\lib\esm\foreignNames.js133673665983422270 0
 103C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\package-json-from-dist\dist\commonjs\index.js133668525217704971 0
-57C:\Users\besdg\Documents\workFlow\sebastienb\package.json133673702479105018 0
+57C:\Users\besdg\Documents\workFlow\sebastienb\package.json133673716195290624 0
 106C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\picture-in-picture.js133668525224246565 0
 114C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\node_modules\css-tree\lib\generator\token-before.js133673666001963279 0
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\commander\package.json133668525218180427 0
@@ -230,7 +230,7 @@
 64C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@alloc133668525213824746 1
 101C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\chalk\node_modules\ansi-styles\package.json133673665983572243 0
 65C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\js-yaml133673665987850484 1
-63C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@lmdb133673696691117658 1
+63C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@lmdb133673710969769073 1
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\lib\value-parser\walk.js133668525222459151 0
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\cjs\lexer\generic-const.cjs133673665988714159 0
 74C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\msgpackr\pack.js133673665987331469 0
@@ -238,7 +238,7 @@
 92C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\core\lib\CommittedAsset.js133673666002962293 0
 65C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@isaacs133668525213824746 1
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\use-strict.js133668525225026548 0
-65C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel133673696691117658 1
+65C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel133673710969769073 1
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\lib\util\normalizeScreens.js133668525221868568 0
 104C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\wrap-ansi-cjs\node_modules\ansi-regex\index.js133668525217888622 0
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\autoprefixer\README.md133668525220955220 0
@@ -266,7 +266,7 @@
 85C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\lru-cache\dist\esm\index.js133668525218668200 0
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\src\util\configurePlugins.js133668525220561075 0
 83C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\semver\ranges\simplify.js133673665988382200 0
-75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@msgpackr-extract133673696691117658 1
+75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@msgpackr-extract133673710969769073 1
 99C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\lib\util\withAlphaVariable.js133668525222479132 0
 97C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\lib\syntax\node\Parentheses.js133673665996336948 0
 99C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\entities\lib\generated\decode-data-xml.js133673665985113100 0
@@ -307,7 +307,7 @@
 86C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\resolve\test\resolver\foo.js133668525220007313 0
 78C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\thenby\thenBy.min.js133668525217563357 0
 89C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\regions\MU.js133668525223933035 0
-62C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@swc133673696691117658 1
+62C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@swc133673710969769073 1
 85C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\sucrase\dist\NameManager.js133668525221049248 0
 99C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\source-map\dist\SourceMap.js.flow133673665986856963 0
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\diagnostic\lib\diagnostic.js133673666004165004 0
@@ -1442,7 +1442,6 @@
 75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\mkdirp\bin\cmd.js133673696690145167 0
 89C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\regions\EC.js133668525222673820 0
 90C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\htmlnano\lib\presets\ampSafe.mjs133673665990112618 0
-60C:\Users\besdg\Documents\workFlow\sebastienb\dist\styles.css133668525026611663 0
 96C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\through2\node_modules\isarray\index.js133673696690209536 0
 75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\parcel\lib\cli.js133673665997761300 0
 88C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@swc\helpers\src\_identity.mjs133673666000080303 0
@@ -1901,7 +1900,7 @@
 87C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\dist\doc\createNode.d.ts133668525221944618 0
 85C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\dist\doc\createNode.js133668525220224847 0
 74C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\lmdb\binding.gyp133673665991878665 0
-67C:\Users\besdg\Documents\workFlow\sebastienb\dist\hero.871c0dc1.jpg133673678589030674 0
+67C:\Users\besdg\Documents\workFlow\sebastienb\dist\hero.871c0dc1.jpg133673717340879494 0
 107C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\ordered-binary\.nyc_output\processinfo\index.json133673665986046418 0
 87C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\dist\doc\directives.d.ts133668525221984707 0
 79C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\browser\index.js133668525220782014 0
@@ -2173,7 +2172,7 @@
 81C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\postcss\lib\postcss.mjs133668525220070415 0
 103C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@swc\helpers\_\_class_apply_descriptor_update133673665996045184 1
 109C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\features\css-container-queries.js133668525221580061 0
-60C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.html133673678629054815 0
+60C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.html133673717340889588 0
 101C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\browser\dist\compose\compose-scalar.js133668525220109238 0
 95C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\yaml\browser\dist\compose\composer.js133668525220156816 0
 92C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\postcss-import\lib\load-content.js133668525218902067 0
@@ -2231,7 +2230,7 @@
 73C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\tailwindcss\lib133668525222119738 1
 86C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\glob\dist\commonjs\ignore.js133668525218922073 0
 72C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\y18n\build\lib133668525218565909 1
-71C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.2e81b6d7.js.map133673678629095572 0
+71C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.2e81b6d7.js.map133673717341024984 0
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@nodelib\fs.scandir\out\adapters\fs.d.ts133668525219613380 0
 87C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\lib\browser.js.map133673666001841140 0
 91C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\require-directory\README.markdown133668525218872097 0
@@ -3792,7 +3791,7 @@
 81C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\semver\ranges\subset.js133673665988538805 0
 89C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\semver\ranges\to-comparators.js133673665988538805 0
 113C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\runtime-js\src\helpers\browser\esm-js-loader.js133673665999162376 0
-81C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Light.77a13055.ttf133673678627994234 0
+81C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Light.77a13055.ttf133673717340899596 0
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\semver\ranges\valid.js133673665988758115 0
 82C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\semver\internal\debug.js133673665986461632 0
 82C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\is-core-module\.eslintrc133668525217613285 0
@@ -4546,7 +4545,7 @@
 97C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\csso\node_modules\css-tree\package.json133673666002462085 0
 71C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\lib133673665987430161 1
 93C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\jquery\src\manipulation\_evalUrl.js133668525217704971 0
-73C:\Users\besdg\Documents\workFlow\sebastienb\.github\workflows\deploy.yml133673703863353926 0
+73C:\Users\besdg\Documents\workFlow\sebastienb\.github\workflows\deploy.yml133673713108609126 0
 75C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\LICENSE133673665982920656 0
 79C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\emoji-regex\text.d.ts133668525219449764 0
 77C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\nth-check\README.md133673665986961158 0
@@ -6403,7 +6402,7 @@
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\lib\syntax\config\walker.js133673665997420469 0
 89C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\caniuse-lite\data\regions\CI.js133668525221164497 0
 97C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\lib\syntax\atrule\font-face.js133673665995155566 0
-80C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Bold.e82a7b61.ttf133673678584172534 0
+80C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Bold.e82a7b61.ttf133673717340899596 0
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\css-tree\lib\syntax\atrule\import.js133673665995425829 0
 104C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\ansi-regex\package.json133673696690179535 0
 99C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\autoprefixer\lib\hacks\background-clip.js133668525219346001 0
@@ -6848,7 +6847,7 @@
 119C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\yargs-parser\build\lib\yargs-parser.js133673696690445435 0
 100C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@babel\helper-validator-identifier\LICENSE133673665983077123 0
 98C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\yargs\browser.mjs133673696690830118 0
-84C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-SemiBold.ec0c7c53.ttf133673678584894371 0
+84C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-SemiBold.ec0c7c53.ttf133673717340899596 0
 92C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\yargs\build133673696690375279 1
 80C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\browserslist\README.md133668525219130294 0
 94C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\copyfiles\node_modules\yargs\LICENSE133673696690079278 0
@@ -8775,7 +8774,7 @@
 91C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\test\OverlayFS.test.js133673666001761606 0
 82C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\src\NodeFS.js133673666001579307 0
 81C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\src\types.js133673666001771647 0
-67C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.2e81b6d7.js133673678629054815 0
+67C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.2e81b6d7.js133673717340889588 0
 83C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\lib\browser.js133673666001579307 0
 85C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\lib\index.js.map133673666001908640 0
 83C:\Users\besdg\Documents\workFlow\sebastienb\node_modules\@parcel\fs\lib\types.d.ts133673666001953284 0
@@ -9199,10 +9198,10 @@
 74C:\Users\besdg\Documents\workFlow\sebastienb\fonts\SpaceGrotesk-Medium.ttf133668525026641666 0
 75C:\Users\besdg\Documents\workFlow\sebastienb\fonts\SpaceGrotesk-Regular.ttf133668525026641666 0
 76C:\Users\besdg\Documents\workFlow\sebastienb\fonts\SpaceGrotesk-SemiBold.ttf133668525026655050 0
-68C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.458e0da3.css133673678629054815 0
-72C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.458e0da3.css.map133673678629084634 0
-82C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Medium.cc218890.ttf133673678589030674 0
-83C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Regular.fe79eafd.ttf133673678584172534 0
+68C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.458e0da3.css133673717340889588 0
+72C:\Users\besdg\Documents\workFlow\sebastienb\dist\index.458e0da3.css.map133673717341024984 0
+82C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Medium.cc218890.ttf133673717340909625 0
+83C:\Users\besdg\Documents\workFlow\sebastienb\dist\SpaceGrotesk-Regular.fe79eafd.ttf133673717340909625 0
 60C:\Users\besdg\Documents\workFlow\sebastienb\data\works.json133673693107209302 0
 58C:\Users\besdg\Documents\workFlow\sebastienb\assets\images133669807270903162 1
 73C:\Users\besdg\Documents\workFlow\sebastienb\assets\images\bookiCapt1.jpg133668939744419838 0
