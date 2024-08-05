@@ -2,4 +2,5 @@
 
 Sebastien berquez Portfolio
 
-npm run build:css
+Online on : 
+sebastienberquez.com
