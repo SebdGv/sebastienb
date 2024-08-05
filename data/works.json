@@ -3,9 +3,9 @@
     "previewImage": "assets/images/ninaCapt.jpg",
     "altText": "Nina Carducci. printscreen",
     "modalImages": [
-      "assets/images/ninaCapt.jpg",
-      "assets/images/ninaCapt2.jpg",
-      "assets/images/ninaCapt1.jpg"
+      "./assets/images/ninaCapt.jpg",
+      "./assets/images/ninaCapt2.jpg",
+      "./assets/images/ninaCapt1.jpg"
     ],
     "link": "https://github.com/SebdGv/nina-carducci",
     "title": "Nina Carducci.",
@@ -13,12 +13,12 @@
     "techno": "chrome devTools - html - css - javascript"
   },
   {
-    "previewImage": "assets/images/kasaCapt.jpg",
+    "previewImage": "./assets/images/kasaCapt.jpg",
     "altText": "Kasa. printscreen",
     "modalImages": [
-      "assets/images/kasaCapt.jpg",
-      "assets/images/kasaCapt1.jpg",
-      "assets/images/kasaCapt2.jpg"
+      "./assets/images/kasaCapt.jpg",
+      "./assets/images/kasaCapt1.jpg",
+      "./assets/images/kasaCapt2.jpg"
     ],
     "link": "https://github.com/SebdGv/kasa",
     "title": "Kasa.",
@@ -26,12 +26,12 @@
     "techno": "react.js - javascript - html - css"
   },
   {
-    "previewImage": "assets/images/monVieuxGrimoire.jpg",
+    "previewImage": "./assets/images/monVieuxGrimoire.jpg",
     "altText": "Mon vieux grimoire. printscreen",
     "modalImages": [
-      "assets/images/monVieuxGrimoire.jpg",
-      "assets/images/monVieuxGrimoire2.jpg",
-      "assets/images/monVieuxGrimoire3.jpg"
+      "./assets/images/monVieuxGrimoire.jpg",
+      "./assets/images/monVieuxGrimoire2.jpg",
+      "./assets/images/monVieuxGrimoire3.jpg"
     ],
     "link": "https://github.com/SebdGv/monVieuxGrimoire",
     "title": "Mon vieux grimoire.",
@@ -39,13 +39,13 @@
     "techno": "node.js - express - mongoDB"
   },
   {
-    "previewImage": "assets/images/bookiCapt.jpg",
+    "previewImage": "./assets/images/bookiCapt.jpg",
     "altText": "Booki. printscreen",
     "modalImages": [
-      "assets/images/bookiCapt.jpg",
-      "assets/images/bookiCapt1.jpg",
-      "assets/images/bookiCapt3.jpg",
-      "assets/images/bookiCapt2.jpg"
+      "./assets/images/bookiCapt.jpg",
+      "./assets/images/bookiCapt1.jpg",
+      "./assets/images/bookiCapt3.jpg",
+      "./assets/images/bookiCapt2.jpg"
     ],
     "link": "https://sebdgv.github.io/Booki-oc/",
     "title": "Booki.",
