@@ -26,20 +26,14 @@ export const scrollIcons = () => {
 
 export const hoverEffect = () => {
   const burger = document.querySelector(".burger");
-  // const cursor = document.querySelector(".cursor");
-  // const burgerHover = document.querySelector(".burgerHover");
   const lines = document.querySelectorAll(".line");
 
   burger.addEventListener("mouseover", () => {
-    // cursor.classList.add("hidden");
-    // burgerHover.classList.add("burger-hover");
     lines.forEach((line) => {
       line.classList.add("scale");
     });
   });
   burger.addEventListener("mouseout", () => {
-    // cursor.classList.remove("hidden");
-    // burgerHover.classList.remove("burger-hover");
     lines.forEach((line) => {
       line.classList.remove("scale");
     });
