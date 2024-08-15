@@ -4,6 +4,6 @@ export function toggleMenu() {
   const html = document.querySelector("html");
 
   burger.classList.toggle("open");
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("opacity-0");
   html.classList.toggle("overflow-hidden");
 }
