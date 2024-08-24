@@ -4,6 +4,6 @@
     "remixicon": "^4.3.0"
   },
   "scripts": {
-    "build": "mkdir -p dist && cp -R src/* dist/"
+    "build": "mkdir -p dist && cp -R * dist/"
   }
 }
