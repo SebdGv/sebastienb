@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html
-  lang="fr"
-  class="scroll-smooth overflow-x-hidden box-border h-full m-0 p-0 touch-pan-y"
->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -33,118 +30,74 @@
     <meta name="twitter:card" content="summary_card" />
     <meta name="twitter:url" content="https://sebastienberquez.com/" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Sb. - Web developer -</title>
   </head>
-
-  <body
-    id="body"
-    class="text-center font-custom transition-colors duration-500 ease-in min-h-screen m-0 p-0"
-  >
-    <div
-      class="cursor lg:bg-[#ffffff] text-white text-[10px] mix-blend-difference w-20 h-20 rounded-full absolute translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none transition-transform duration-300 max-lg:hidden"
-    ></div>
-    <header class="fixed top-0 z-30 w-full min-h-[60px]">
-      <nav class="p-8 lg:px-20">
-        <div class="navBar flex justify-between items-center">
-          <div
-            class="homeLogo z-30 tracking-tighter font-light sm:text-xl lg:text-[35px]"
-          >
-            <a href="#">Sb.</a>
-          </div>
-          <!-- <div class="burgerHover"></div> -->
-          <div
-            class="burger z-30 flex flex-col justify-around cursor-pointer h-3 lg:h-4"
-          >
-            <div
-              class="line line1 w-6 h-[0.5px] bg-black transition-all duration-300 lg:w-12 lg:h-[2px]"
-            ></div>
-            <div
-              class="line line2 w-6 h-[0.5px] bg-black transition-all duration-300 opacity-0 lg:w-12 lg:h-[2px]"
-            ></div>
-            <div
-              class="line line3 w-6 h-[0.5px] bg-black transition-all duration-300 lg:w-12 lg:h-[2px]"
-            ></div>
-          </div>
-        </div>
-        <div
-          id="menu"
-          class="z-20 flex-col justify-center items-center absolute left-0 top-0 w-full h-[100vh] bg-white hidden"
-        >
-          <ul
-            class="flex flex-col justify-center items-center h-full text-3xl font-light gap-10 sm:text-5xl lg:text-9xl"
-            id="menu-text"
-          >
-            <li>
-              <a href="#about" class="hover:text-gray-500 duration-500"
-                >about</a
-              >
-            </li>
-            <li>
-              <a href="#works" class="hover:text-gray-500 duration-500"
-                >works</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="hover:text-gray-500 duration-500"
-                >contact</a
-              >
-            </li>
-          </ul>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="homeLink"><a href="#">Sb.</a></div>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
         </div>
       </nav>
+      <div class="menu">
+        <div class="menu-container">
+          <div class="menu-content">
+            <ul>
+              <li><a href="#about">about</a></li>
+              <li><a href="#works">works</a></li>
+              <li><a href="#contact">contact</a></li>
+              <!-- <li><a href="#lab">lab</a></li> -->
+            </ul>
+          </div>
+          <div class="menu-social social">
+            <a
+              href="https://www.linkedin.com/in/sébastien-berquez-7a56912ba"
+              target="_blank"
+            >
+              <img
+                src="./assets/icons/linkedin-box-fill-black.svg"
+                alt="linkedin icon"
+              />
+            </a>
+            <a href="mailto:contact@sebastienberquez.com" target="_blank">
+              <img src="./assets/icons/mail-line-black.svg" alt="mail icon" />
+            </a>
+            <a href="https://github.com/SebdGv" target="_blank">
+              <img
+                src="./assets/icons/github-fill-black.svg"
+                alt="github icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="relative">
-      <section id="hero" class="my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32">
-        <div class="relative overflow-hidden">
-          <h1
-            class="text-center font-light leading-tight w-[65%] max-w-[900px] m-auto my-32 py-8 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl"
-          >
-            <span class="block opacity-0 animate-reveal">
-              Hello, I am Sebastien, a freelance web developer, building
-              fonctional websites & digital experiences.
-            </span>
-          </h1>
-        </div>
+    <main>
+      <section id="hero" class="hero sticky">
+        <h1>
+          <div class="title-container">
+            <span>Hello, I am Sebastien,</span>
+          </div>
+          <div class="title-container">
+            <span> a freelance web developer,</span>
+          </div>
+          <div class="title-container">
+            <span> building fonctional websites </span>
+          </div>
+          <div class="title-container">
+            <span>& digital experiences.</span>
+          </div>
+        </h1>
       </section>
-      <section
-        id="about"
-        class="flex flex-col justify-between h-full max-w-[100vw] mx-8 my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 2xl:mx-36 lg:pl-14 gap-16 md:flex-row-reverse"
-      >
-        <div
-          class="imgAbout flex justify-center items-center animate-fadeInRight"
-        >
-          <img
-            src="./assets/images/hero.jpg"
-            class="rounded-[70px] transition-all duration-500 ease-in-out w-full max-w-[50%] md:min-w-80 max-h-full"
-            alt="Dev Sebastien photography"
-          />
-        </div>
-        <div class="textAbout text-left -z-10">
-          <h2
-            id="aboutTitle"
-            class="text-lg md:text-xl lg:text-2xl pb-16 text-gray-400 opacity-0"
-          >
-            about me
-          </h2>
-          <p
-            id="aboutText"
-            class="text-sm px-16 md:text-xl lg:text-2xl pl-8 opacity-0"
-          >
+      <section id="about" class="about container">
+        <div class="about-text">
+          <h2>about me</h2>
+          <p>
             Passionate about web development, I create unique and functional
             digital experiences. My goal is to turn ideas into innovative and
             effective websites.
@@ -155,156 +108,83 @@
             technology to deliver the best to my clients.
           </p>
         </div>
-      </section>
-      <section
-        id="works"
-        class="my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 snap-center"
-      >
-        <h3
-          class="text-xl sm:text-5xl lg:text-6xl xl:text-8xl font-light py-16 lg:py-32 relative justify-center items-center"
-        >
-          Selected Works
-        </h3>
-        <div
-          id="carouselBg"
-          class="bg-gray-200 w-[100vw] h-[250px] min-[475px]:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] relative flex justify-center items-center opacity-0 transition-opacity duration-1000 ease-in-out overflow-hidden"
-        >
-          <div
-            class="prev text-white absolute z-10 text-[15px] lg:text-[35px] font-thin bg-black/90 px-2 lg:px-4 rounded-full cursor-pointer left-[3%] border lg:border-2 border-white/70"
-          >
-            &lt;
-          </div>
-          <div
-            id="carousel"
-            class="carousel flex justify-center items-center"
-          ></div>
-          <div
-            class="next text-white absolute z-10 font-thin text-[15px] lg:text-[35px] bg-black/90 px-2 lg:px-4 rounded-full cursor-pointer right-[3%] border lg:border-2 border-white/70"
-          >
-            &gt;
-          </div>
-          <div
-            class="dots absolute bottom-4 w-full flex justify-center items-center md:bottom-4 lg:bottom-1"
-          ></div>
+        <div class="about-img">
+          <img src="./assets/hero.jpg" alt="Sebastien Berquez" />
         </div>
-        <!-- Modal -->
-        <div
-          id="modalBackground"
-          class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden aanimate-fade"
-        >
-          <div
-            id="modal"
-            class="relative lg:w-[80%] max-w-4xl h-[70%] md:h-[50%] flex flex-col justify-center items-center md:flex-row bg-white rounded-3xl overflow-hidden shadow-lg gap-3"
-          >
-            <button
-              id="closeModal"
-              class="absolute top-4 right-8 text-2xl text-black hover:text-gray-500"
-            >
-              x
-            </button>
-            <img
-              id="modalImage"
-              class="w-auto h-1/2 md:w-1/2 lg:h-auto object-contain"
-            />
-            <div class="my-auto p-6 text-left">
-              <h3 id="modalTitle" class="text-xl lg:text-2xl mb-6"></h3>
-              <p id="modalTechno" class="text-sm lg:text-base mb-6">test</p>
-              <p id="modalDescription" class="text-sm lg:text-base mb-6"></p>
-              <a
-                id="modalLink"
-                href="#"
-                target="_blank"
-                class="underline float-right italic"
-                >View project</a
+      </section>
+      <section id="works" class="works">
+        <div class="works-container container">
+          <h2>Selected Works</h2>
+          <div class="cards"></div>
+        </div>
+      </section>
+      <div class="modal hidden"></div>
+      <div id="scrollBar" class="scroll-bar">
+        <div class="scroll-bar-container">
+          <div class="scroll-bar-content">
+            <div class="scroll-bar-content-item">
+              <i class="icon fa-brands fa-css3"></i>
+              <i class="icon fa-brands fa-html5"></i>
+              <i class="icon fa-brands fa-square-js"></i>
+              <i class="icon fa-brands fa-react"></i>
+              <i class="icon fa-brands fa-node"></i>
+              <i class="icon fa-brands fa-github"></i>
+              <i class="icon fa-brands fa-git"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="contact-left">
+            <h3>You have a project ?</h3>
+            <div class="mail">
+              <a href="mailto:contact@sebastienberquez.com"
+                >contact@sebastienberquez.com</a
               >
+            </div>
+            <div class="tel"><a href="tel:+33698734989">+33 698734989</a></div>
+          </div>
+          <div class="contact-right">
+            <button class="contact-btn">
+              <a href="mailto:contact@sebastienberquez.com">Let's talk</a>
+            </button>
+            <div class="contact-social social">
+              <a
+                href="https://www.linkedin.com/in/sébastien-berquez-7a56912ba"
+                target="_blank"
+              >
+                <img
+                  src="./assets/icons/linkedin-box-fill.svg"
+                  alt="linkedin icon"
+                />
+              </a>
+              <a href="mailto:contact@sebastienberquez.com" target="_blank">
+                <img src="./assets/icons/mail-line.svg" alt="mail icon" />
+              </a>
+              <a href="https://github.com/SebdGv" target="_blank">
+                <img src="./assets/icons/github-fill.svg" alt="github icon" />
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section
-        id="scrollBar"
-        class="w-full flex justify-center items-center my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 py-8 snap-center"
-      >
-        <div class="containIcon flex whitespace-nowrap animate-scroll">
-          <i
-            class="icon fa-brands fa-css3 fa-2xl mr-36 transition-transform"
-          ></i>
-          <i
-            class="icon fa-brands fa-html5 fa-2xl mr-36 transition-transform"
-            aria-label="icon HTML5"
-          ></i>
-          <i
-            class="icon fa-brands fa-square-js fa-2xl mr-36 transition-transform"
-          ></i>
-          <i
-            class="icon fa-brands fa-react fa-2xl mr-36 transition-transform"
-          ></i>
-          <i
-            class="icon fa-brands fa-node fa-2xl mr-36 transition-transform"
-          ></i>
-          <i
-            class="icon fa-brands fa-github fa-2xl mr-36 transition-transform"
-          ></i>
-          <i
-            class="icon fa-brands fa-git fa-2xl mr-36 transition-transform"
-          ></i>
-        </div>
-      </section>
-      <section
-        id="contact"
-        class="flex flex-col justify-center items-center my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 2xl:mx-64 py-8 snap-center"
-      >
-        <h4
-          class="pb-8 lg:pb-16 font-light text-2xl sm:text-5xl lg:text-6xl xl:text-8xl"
-        >
-          You have a project ?
-        </h4>
-        <button
-          id="contactBtn"
-          class="hover:animate-pulse w-40 h-16 sm:w-52 sm:h-20 rounded-full flex items-center justify-center text-sm sm:text-xl transition-all duration-500 ease-in-out"
-        >
-          <a href="mailto:contact@sebastienberquez.com" class="text-black"
-            >Let's talk</a
-          >
-        </button>
-        <div class="py-8 lg:py-16 flex flex-col justify-center items-center">
-          <a
-            href="mailto:contact@sebastienberquez.com"
-            class="font-light text-2xl pb-8 lg:pb-16 sm:text-5xl lg:text-6xl xl:text-8xl"
-            >contact@ <br />
-            sebastienberquez.com</a
-          >
-          <a
-            href="tel:+33698734989"
-            class="font-light text-2xl sm:text-5xl lg:text-6xl xl:text-8xl"
-            >+33 698734989</a
-          >
-          <!-- <a href="">
-            <i class="fa-solid fa-download fa-2xl mt-14 font-light"> cv </i></a
-          > -->
-          <a
-            href="https://www.linkedin.com/in/sébastien-berquez-7a56912ba"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin fa-2xl mt-14"></i
-          ></a>
-        </div>
-      </section>
     </main>
-    <footer
-      class="flex flex-col justify-center items-center font-light my-16 sm:my-20 md:my-24 lg:my-28 xl:my-32 2xl:my-36 pb-20 text-xl"
-    >
-      <ul>
-        <li><a href="#about" class="hover:text-gray-500">about</a></li>
-        <li><a href="#works" class="hover:text-gray-500">works</a></li>
-        <li><a href="#contact" class="hover:text-gray-500">contact</a></li>
-      </ul>
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#lab" class="lab-link">lab</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 sebastien berquez. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-    <p class="text-gray-500 text-xs">
-      &copy; 2024 sebastien berquez. All rights reserved.
-    </p>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="module" src="./script.js"></script>
   </body>
 </html>
