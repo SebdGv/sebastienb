@@ -1,9 +1,11 @@
 {
+  "name": "sebastienberquez.com",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "rmdir /s /q dist && mkdir dist && xcopy  dist /s /e /y"
+  },
   "dependencies": {
     "gsap": "^3.12.5",
     "remixicon": "^4.3.0"
-  },
-  "scripts": {
-    "build": "mkdir -p dist && cp -R * dist/"
   }
 }
