@@ -1,11 +1,19 @@
 {
-  "name": "sebastienberquez.com",
+  "name": "sebastien-berquez-portfolio",
   "version": "2.0.0",
   "scripts": {
-    "build": "rmdir /s /q dist && mkdir dist && xcopy  dist /s /e /y"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html --dist-dir dist && npm run copy-assets",
+    "copy-assets": "npm run copy-data && npm run copy-images",
+    "copy-data": "npx copyfiles -u 1 'data/**/*' dist/",
+    "copy-images": "npx copyfiles -u 2 'assets/images/*' dist/assets/images/"
   },
   "dependencies": {
     "gsap": "^3.12.5",
     "remixicon": "^4.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "parcel": "^2.12.0"
   }
 }
