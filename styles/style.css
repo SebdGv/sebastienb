@@ -499,6 +499,18 @@ button {
   opacity: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    flex-direction: row;
+    height: 100%;
+    padding: 0 1rem;
+  }
+}
 .view-project-container {
   position: relative;
   display: flex;

@@ -550,6 +550,17 @@ button {
   opacity: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .modal-container {
+    @include flex-center;
+  }
+  .modal-content {
+    flex-direction: row;
+    height: 100%;
+    padding: 0 1rem;
+  }
+}
+
 // View project container styles
 
 .view-project-container {

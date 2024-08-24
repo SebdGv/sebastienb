@@ -40,10 +40,16 @@ export function createCard(project) {
 export async function displayProjects() {
   const projects = await loadProjects();
   const cardsContainer = document.querySelector(".cards");
-
-  projects.forEach((project, index) => {
-    const card = createCard(project);
-    card.classList.add(`card${index + 1}`); // Ajouter une classe unique par carte
-    cardsContainer.appendChild(card);
-  });
+  if (projects.length === 0) {
+    // Vérifie si le tableau de projets est vide et affiche un message si nécessaire
+    const message = document.createElement("p");
+    message.textContent = "No projects found.";
+    cardsContainer.appendChild(message);
+  } else {
+    projects.forEach((project, index) => {
+      const card = createCard(project);
+      card.classList.add(`card${index + 1}`); // Ajouter une classe unique par carte
+      cardsContainer.appendChild(card);
+    });
+  }
 }
