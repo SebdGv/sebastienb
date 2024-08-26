@@ -297,7 +297,8 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .hero {
-    margin: 0rem 4rem 2rem 4rem;
+    margin: 0;
+    width: 100%;
   }
 }
 .about {
@@ -655,7 +656,7 @@ button {
   background: #fff;
   width: 10rem;
   height: 3rem;
-  border-radius: 300px;
+  border-radius: 50px 50px 50px 0;
   margin: 2rem;
   transition: all 0.3s;
 }
@@ -695,15 +696,12 @@ button {
   .contact-container .tel {
     font-size: 1.5rem;
   }
-  .contact-btn {
-    border-radius: 50px 50px 50px 0;
-  }
 }
 @media screen and (min-width: 1024px) {
   .contact {
     height: calc(100vh - 182px);
     z-index: 999;
-    padding-left: 4rem;
+    padding: 0 4rem;
   }
   .contact-container h3 {
     font-size: clamp(1rem, 5vw, 15rem);
@@ -712,9 +710,6 @@ button {
   .contact-container .tel {
     font-size: 2rem;
     text-align: left;
-  }
-  .contact-right {
-    margin-right: 4rem;
   }
   .contact-btn {
     background: #fff;

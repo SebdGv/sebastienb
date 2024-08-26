@@ -11,6 +11,9 @@ const cardsContainer = document.querySelector(".works-container");
 const cards = document.querySelector(".cards");
 const title = document.querySelector(".works h2");
 const burger = document.querySelector(".burger");
+const aboutContainer = document.querySelector(".about");
+const aboutImg = document.querySelector(".about-img");
+const aboutText = document.querySelector(".about-text");
 
 // OPEN MENU
 burger.addEventListener("click", () => {
