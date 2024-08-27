@@ -54,15 +54,15 @@ export function scrollAnimation() {
       "-=0.9"
     );
   }
+  gsap.to(aboutImg, {
+    scrollTrigger: {
+      trigger: aboutImg,
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 1,
+    },
+    y: -100,
+    duration: 1,
+    ease: "none",
+  });
 }
-gsap.to(aboutImg, {
-  scrollTrigger: {
-    trigger: aboutImg,
-    start: "top 80%",
-    end: "bottom 20%",
-    scrub: 1,
-  },
-  y: -100,
-  duration: 1,
-  ease: "none",
-});
