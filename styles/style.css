@@ -330,7 +330,7 @@ button {
   color: #fff;
   margin: 0 2rem;
   font-size: clamp(0.875rem, 1vw, 15rem);
-  line-height: 1.25rem;
+  line-height: 2rem;
   letter-spacing: 0.03em;
   font-family: "Inter", sans-serif;
 }
