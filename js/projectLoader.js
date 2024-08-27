@@ -20,17 +20,17 @@ export function createCard(project) {
 
   const viewProject = document.createElement("p");
   viewProject.className = "view-project";
-  viewProject.textContent = project.title;
+  viewProject.textContent = "";
 
   viewProjectContainer.appendChild(viewProject);
   card.appendChild(viewProjectContainer);
 
   card.addEventListener("mouseenter", () => {
-    viewProject.textContent = "View Project.";
+    viewProject.textContent = project.title;
   });
 
   card.addEventListener("mouseleave", () => {
-    viewProject.textContent = project.title;
+    viewProject.textContent = "";
   });
 
   return card;

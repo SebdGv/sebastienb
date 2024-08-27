@@ -569,10 +569,10 @@ button {
 .view-project-container {
   position: relative;
   display: flex;
-  background: #00000036;
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: hidden;
   transition: all 0.3s;
 
   .view-project {
@@ -586,10 +586,6 @@ button {
     margin: 2rem;
     word-wrap: break-word;
     line-height: 0.75;
-  }
-
-  &:hover {
-    background: #000000da;
   }
 }
 
@@ -637,7 +633,11 @@ button {
       height: 40vh;
       min-height: 250px;
       border-radius: 40px;
+      transition: all 0.3s;
       cursor: pointer;
+      :hover {
+        background: #00000036;
+      }
     }
   }
 
