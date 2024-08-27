@@ -349,6 +349,7 @@ button {
   .about {
     flex-direction: row;
     justify-content: space-around;
+    height: 110vh;
   }
   .about .about-img {
     display: flex;

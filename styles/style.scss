@@ -394,6 +394,7 @@ button {
   .about {
     flex-direction: row;
     justify-content: space-around;
+    height: 110vh;
 
     .about-img {
       @include flex-center;
