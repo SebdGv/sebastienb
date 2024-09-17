@@ -315,7 +315,7 @@ button {
 }
 .about .about-img img {
   width: 100%;
-  transform: translate(0, -25%);
+  transform: translate(0);
 }
 .about .about-text {
   z-index: 3;
@@ -769,16 +769,6 @@ footer {
     transform: translateY(100px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
     opacity: 1;
     transform: translateY(0);
   }
