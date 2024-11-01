@@ -437,6 +437,7 @@ button {
   background: #fff;
   width: 80vw;
   height: 60vh;
+  overflow: hidden;
 }
 
 .modal-content {
