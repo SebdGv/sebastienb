@@ -1,6 +1,6 @@
 // SCROLL ANIMATION
-import gsap from "/gsap/index.js";
-import ScrollTrigger from "/gsap/ScrollTrigger.js";
+import gsap from "gsap/index.js";
+import ScrollTrigger from "gsap/ScrollTrigger.js";
 // Enregistrez le plugin ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 

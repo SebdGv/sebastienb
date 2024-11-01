@@ -13,6 +13,7 @@
     "remixicon": "^4.3.0"
   },
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "copyfiles": "^2.4.1",
     "parcel": "^2.12.0"
   }
