@@ -11,7 +11,7 @@
     "link": "https://github.com/SebdGv/kasa",
     "title": "Kasa.",
     "description": " For this project, I developed the front end of a housing rental site using React. I was responsible for transforming a static mockup into a dynamic and fully functional website. This included creating reusable React components, managing application state, and ensuring the user interface was both responsive and intuitive.",
-    "techno": "react.js - javascript - html - css"
+    "techno": "react.js - javascript - html - css "
   },
   {
     "previewImage": "../assets/voyagealacarte.png",
