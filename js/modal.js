@@ -17,10 +17,36 @@ export async function initializeModal() {
     const modalImageContainer = document.createElement("div");
     modalImageContainer.classList.add("modal-image-container");
 
-    const modalImg = document.createElement("img");
-    modalImg.classList.add("modal-img");
-    modalImg.src = project.modalImages[0];
-    modalImg.alt = project.altText;
+    let mediaElement;
+    if (project.video) {
+      // Créer une balise vidéo si le projet a une vidéo
+      mediaElement = document.createElement("video");
+      mediaElement.classList.add("modal-video");
+      mediaElement.src = project.video;
+      mediaElement.controls = false; // Ajouter des contrôles vidéo
+      mediaElement.autoplay = true; // Lecture automatique
+      mediaElement.loop = true; // Boucle la vidéo
+    } else {
+      // Créer une balise image si le projet a des images
+      mediaElement = document.createElement("img");
+      mediaElement.classList.add("modal-img");
+      mediaElement.src = project.modalImages[0];
+      mediaElement.alt = project.altText;
+
+      // Interval pour changer d'image toutes les 3 secondes
+      interval = setInterval(() => {
+        currentImageIndex =
+          (currentImageIndex + 1) % project.modalImages.length;
+        mediaElement.src = project.modalImages[currentImageIndex];
+      }, 3000);
+
+      mediaElement.addEventListener("click", () => {
+        clearInterval(interval);
+        currentImageIndex =
+          (currentImageIndex + 1) % project.modalImages.length;
+        mediaElement.src = project.modalImages[currentImageIndex];
+      });
+    }
 
     const modalText = document.createElement("div");
     modalText.classList.add("modal-text");
@@ -48,7 +74,7 @@ export async function initializeModal() {
     modalText.appendChild(modalTitle);
     modalText.appendChild(modalParagraph);
     modalText.appendChild(modalButton);
-    modalImageContainer.appendChild(modalImg);
+    modalImageContainer.appendChild(mediaElement);
     modalContent.appendChild(modalImageContainer);
     modalContent.appendChild(modalText);
     modalContainer.appendChild(modalContent);
@@ -56,18 +82,8 @@ export async function initializeModal() {
     modal.innerHTML = ""; // Vider le contenu précédent de la modale
     modal.appendChild(modalContainer);
 
+    // Gestion de l'événement de fermeture
     closeIcon.addEventListener("click", closeModal);
-    modalImg.addEventListener("click", () => {
-      clearInterval(interval);
-      currentImageIndex = (currentImageIndex + 1) % project.modalImages.length;
-      modalImg.src = project.modalImages[currentImageIndex];
-    });
-
-    // Interval pour changer d'image toutes les 3 secondes
-    interval = setInterval(() => {
-      currentImageIndex = (currentImageIndex + 1) % project.modalImages.length;
-      modalImg.src = project.modalImages[currentImageIndex];
-    }, 3000);
   }
 
   // Fonction pour ouvrir la modale

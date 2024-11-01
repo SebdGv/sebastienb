@@ -1,18 +1,5 @@
 [
   {
-    "previewImage": "../assets/ninaCapt.jpg",
-    "altText": "Nina Carducci. printscreen",
-    "modalImages": [
-      "../assets/ninaCapt.jpg",
-      "../assets/ninaCapt2.jpg",
-      "../assets/ninaCapt1.jpg"
-    ],
-    "link": "https://github.com/SebdGv/nina-carducci",
-    "title": "Nina Carducci.",
-    "description": " I worked on debugging and improving the Nina Carducci website using Chrome DevTools. The main tasks involved identifying and fixing various bugs, optimizing the site’s performance, and enhancing the overall user experience by updating the HTML and CSS.",
-    "techno": "chrome devTools - html - css - javascript"
-  },
-  {
     "previewImage": "../assets/kasaCapt.jpg",
     "altText": "Kasa. printscreen",
     "modalImages": [
@@ -20,10 +7,20 @@
       "../assets/kasaCapt1.jpg",
       "../assets/kasaCapt2.jpg"
     ],
+    "video": "../assets/screencast/screencastKasa1.mp4",
     "link": "https://github.com/SebdGv/kasa",
     "title": "Kasa.",
     "description": " For this project, I developed the front end of a housing rental site using React. I was responsible for transforming a static mockup into a dynamic and fully functional website. This included creating reusable React components, managing application state, and ensuring the user interface was both responsive and intuitive.",
     "techno": "react.js - javascript - html - css"
+  },
+  {
+    "previewImage": "../assets/voyagealacarte.png",
+    "altText": "Voyage à la carte. printscreen",
+    "video": "../assets/screencast/screencastValc.mp4",
+    "link": "https://www.voyagealacarte.fr/",
+    "title": "Voyage à la carte.",
+    "description": "Creation of a presentation website for a photography project. The goal was to showcase the photographer's portfolio in an elegant and user-friendly manner, ensuring that the website was visually appealing and easy to navigate.",
+    "techno": "hmtl - sass - javascript - gsap"
   },
   {
     "previewImage": "../assets/monVieuxGrimoire.jpg",
@@ -39,17 +36,16 @@
     "techno": "node.js - express - mongoDB"
   },
   {
-    "previewImage": "../assets/bookiCapt.jpg",
-    "altText": "Booki. printscreen",
+    "previewImage": "../assets/ninaCapt.jpg",
+    "altText": "Nina Carducci. printscreen",
     "modalImages": [
-      "../assets/bookiCapt.jpg",
-      "../assets/bookiCapt1.jpg",
-      "../assets/bookiCapt3.jpg",
-      "../assets/bookiCapt2.jpg"
+      "../assets/ninaCapt.jpg",
+      "../assets/ninaCapt2.jpg",
+      "../assets/ninaCapt1.jpg"
     ],
-    "link": "https://sebdgv.github.io/Booki-oc/",
-    "title": "Booki.",
-    "description": "For the Booki project, I created a fully responsive website using HTML and CSS. The objective was to ensure the site was accessible on various devices, including desktops, tablets, and smartphones, while maintaining a consistent and appealing design. This project helped me to refine my skills in responsive web design and front-end development.",
-    "techno": "html - css - javascript"
+    "link": "https://github.com/SebdGv/nina-carducci",
+    "title": "Nina Carducci.",
+    "description": " I worked on debugging and improving the Nina Carducci website using Chrome DevTools. The main tasks involved identifying and fixing various bugs, optimizing the site’s performance, and enhancing the overall user experience by updating the HTML and CSS.",
+    "techno": "chrome devTools - html - css - javascript"
   }
 ]

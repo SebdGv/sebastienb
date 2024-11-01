@@ -192,6 +192,7 @@ button {
 
 .menu {
   transform: translateY(100%);
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -199,6 +200,7 @@ button {
   height: 100vh;
   background: $primary-color;
   z-index: 10;
+  transition: opacity 0.8s;
 
   .menu-container {
     @include flex-center;
@@ -241,10 +243,14 @@ button {
 
 .open-menu {
   transform: translateY(0);
+  opacity: 1;
 
   .menu-content {
     opacity: 1 !important;
   }
+}
+.closing {
+  opacity: 0; // Lors de la fermeture, cette classe réduit l'opacité à 0
 }
 
 .menu-social {
@@ -489,17 +495,18 @@ button {
 .modal-image-container {
   position: relative;
   min-width: 50%;
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-img {
+.modal-img,
+.modal-video {
   max-width: 100%;
   object-fit: cover;
   padding: 1rem;
-  max-height: 30vh;
+  max-height: 40vh;
   cursor: pointer;
 }
 
@@ -509,6 +516,9 @@ button {
   padding: 1rem;
   gap: 1rem;
   font-size: clamp(0.675rem, 1vw, 2rem);
+  & p {
+    font-family: "inter", sans-serif;
+  }
 }
 
 .modal-btn {
@@ -555,11 +565,21 @@ button {
 @media screen and (min-width: 1024px) {
   .modal-container {
     @include flex-center;
+    height: 80vh;
+    width: 50vw;
   }
   .modal-content {
-    flex-direction: row;
     height: 100%;
-    padding: 0 1rem;
+    padding: 1rem;
+  }
+  .modal-img,
+  .modal-video {
+    min-height: 50%;
+  }
+
+  .modal-text {
+    gap: 2rem;
+    max-width: 80%;
   }
 }
 
@@ -571,6 +591,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 100%;
+
   overflow: hidden;
   transition: all 0.3s;
 
