@@ -1,5 +1,4 @@
 import { toggleMenu } from "./js/burgerMenu.js";
-import { initializeHoverMenu } from "./js/hoverMenuList.js";
 import { initializeModal } from "./js/modal.js";
 import { displayProjects } from "./js/projectLoader.js";
 import { scrollAnimation } from "./js/scrollAnimation.js";
@@ -17,5 +16,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   await displayProjects();
   initializeModal();
   scrollAnimation();
-  initializeHoverMenu();
+  // initializeHoverMenu();
 });
