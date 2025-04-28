@@ -42,6 +42,13 @@
     <title>Sb. - Web developer -</title>
   </head>
   <body>
+    <div id="splash-screen">
+      <div id="logo">
+        <span class="letter">S</span>
+        <span class="letter">b</span>
+        <span class="dot">.</span>
+      </div>
+    </div>
     <header>
       <nav class="nav-bar">
         <div class="homeLink"><a href="#">Sb.</a></div>
@@ -55,9 +62,23 @@
         <div class="menu-container">
           <div class="menu-content">
             <ul>
-              <li><a href="#about">about</a></li>
-              <li><a href="#works">works</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li>
+                <a
+                  href="#about"
+                  data-img-src="/assets/hoverMenu/contactPreview.png"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a href="#works" data-img-src="/assets/KasaCapt.jpg">works</a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  data-img-src="/assets/hoverMenu/contactPreview.png"
+                  >contact</a
+                >
+              </li>
               <!-- <li><a href="#lab">lab</a></li> -->
             </ul>
           </div>
@@ -66,19 +87,19 @@
               href="https://www.linkedin.com/in/sébastien-berquez-7a56912ba"
               target="_blank"
             >
-              <img
-                src="./assets/icons/linkedin-box-fill-black.svg"
-                alt="linkedin icon"
-              />
+              <img src="./assets/icons/linkedin-box-fill.svg" alt="mail icon" />
             </a>
-            <a href="mailto:contact@sebastienberquez.com" target="_blank">
-              <img src="./assets/icons/mail-line-black.svg" alt="mail icon" />
+            <a
+              href="https://www.instagram.com/sebastien_berquez/"
+              target="_blank"
+            >
+              <img
+                src="./assets/icons/icons8-instagram(2).svg"
+                alt="instagram icon"
+              />
             </a>
             <a href="https://github.com/SebdGv" target="_blank">
-              <img
-                src="./assets/icons/github-fill-black.svg"
-                alt="github icon"
-              />
+              <img src="./assets/icons/github-fill.svg" alt="github icon" />
             </a>
           </div>
         </div>
@@ -124,21 +145,6 @@
         </div>
       </section>
       <div class="modal hidden"></div>
-      <div id="scrollBar" class="scroll-bar">
-        <div class="scroll-bar-container">
-          <div class="scroll-bar-content">
-            <div class="scroll-bar-content-item">
-              <i class="icon fa-brands fa-css3"></i>
-              <i class="icon fa-brands fa-html5"></i>
-              <i class="icon fa-brands fa-square-js"></i>
-              <i class="icon fa-brands fa-react"></i>
-              <i class="icon fa-brands fa-node"></i>
-              <i class="icon fa-brands fa-github"></i>
-              <i class="icon fa-brands fa-git"></i>
-            </div>
-          </div>
-        </div>
-      </div>
       <section id="contact" class="contact">
         <div class="contact-container">
           <div class="contact-left">
@@ -164,8 +170,14 @@
                   alt="linkedin icon"
                 />
               </a>
-              <a href="mailto:contact@sebastienberquez.com" target="_blank">
-                <img src="./assets/icons/mail-line.svg" alt="mail icon" />
+              <a
+                href="https://www.instagram.com/sebastien_berquez/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/icons/icons8-instagram(2).svg"
+                  alt="mail icon"
+                />
               </a>
               <a href="https://github.com/SebdGv" target="_blank">
                 <img src="./assets/icons/github-fill.svg" alt="github icon" />

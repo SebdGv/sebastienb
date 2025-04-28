@@ -1,7 +1,9 @@
 import { toggleMenu } from "./js/burgerMenu.js";
+import { initializeHoverMenu } from "./js/hoverMenuList.js";
 import { initializeModal } from "./js/modal.js";
 import { displayProjects } from "./js/projectLoader.js";
 import { scrollAnimation } from "./js/scrollAnimation.js";
+import { splashScreen } from "./js/splashScreen.js";
 
 const burger = document.querySelector(".burger");
 
@@ -11,7 +13,9 @@ burger.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
+  splashScreen();
   await displayProjects();
   initializeModal();
   scrollAnimation();
+  initializeHoverMenu();
 });

@@ -9,7 +9,8 @@
     "copy-images": "npx copyfiles -u 2 'assets/images/*' dist/assets/images/"
   },
   "dependencies": {
-    "gsap": "^3.12.5",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.7",
     "remixicon": "^4.3.0"
   },
   "devDependencies": {

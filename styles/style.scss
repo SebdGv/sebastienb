@@ -123,6 +123,76 @@ button {
   background: $secondary-color;
 }
 
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+// Splash screen styles
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  pointer-events: none;
+
+  transform: scale(1);
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out,
+    transform 0.8s ease-in-out;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+  #logo {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $primary-color;
+    letter-spacing: -0.05em;
+    padding: 20px 100px;
+    position: relative;
+    border-radius: 300px;
+    border: 4px solid $primary-color;
+    overflow: hidden;
+    z-index: 1000;
+
+    & .letter,
+    .dot {
+      position: relative;
+      z-index: 1001;
+      mix-blend-mode: difference;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      right: -100px;
+      bottom: -100px;
+      background: linear-gradient(
+        to right,
+        transparent 50%,
+        $primary-color 50%
+      );
+      background-size: 200% 100%;
+      animation: moveBorder 1.8s cubic-bezier(0.17, 0.69, 0.9, 0.34) forwards;
+      border-radius: 300px; // Assure-toi que la bordure suive la même forme
+      box-sizing: border-box; // Prend en compte la bordure dans le calcul
+    }
+  }
+}
+
 // Nav bar styles
 
 .nav-bar {
@@ -142,7 +212,9 @@ button {
 
   a {
     letter-spacing: -0.05em;
-    color: $primary-color;
+    animation: homeLinkAnim 0.15s cubic-bezier(0.17, 0.69, 0.9, 0.34) 3.55s
+      forwards;
+    color: $secondary-color;
   }
 }
 
@@ -161,19 +233,18 @@ button {
 .burger {
   cursor: pointer;
   padding: 2rem;
-  transition: all 0.3s;
-  &:hover {
-    transform: scale(1.2);
-  }
+  transition: all 0.15s;
 }
 
 .line {
-  width: 24px;
+  width: 32px;
   height: 2px;
   background: $primary-color;
+  opacity: 0;
   margin: 4px;
-  transition: all 0.3s;
+  transition: transform 0.3s;
   flex-shrink: 0;
+  animation: burgerAnim 0.15s cubic-bezier(0.17, 0.69, 0.9, 0.34) 3.4s forwards;
 }
 
 .line2 {
@@ -188,6 +259,18 @@ button {
   transform: translateY(-3px) rotate(-45deg);
 }
 
+@media screen and (min-width: 1024px) {
+  .burger {
+    pointer-events: none; // Disable hover during animation
+    animation: enableHover 4s forwards; // Enable hover after animation
+
+    &:hover {
+      background: rgba($tertiary-color, 0.09);
+      border-radius: 300px;
+    }
+  }
+}
+
 // Menu styles
 
 .menu {
@@ -199,23 +282,30 @@ button {
   width: 100vw;
   height: 100vh;
   background: $primary-color;
-  z-index: 10;
   transition: opacity 0.8s;
-
+  z-index: 10;
+  a {
+    z-index: 10000;
+    mix-blend-mode: difference;
+  }
   .menu-container {
     @include flex-center;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
 
+    position: relative;
+
     .menu-content {
       font-size: clamp(3rem, 8vw, 15rem);
       opacity: 0;
+      z-index: 30;
+      position: relative;
 
       ul li {
         opacity: 0;
         transform: translateY(20px);
-        transition: all 0.25s ease-in-out;
+        transition: all 0.25s;
       }
       &.animate ul li {
         opacity: 1;
@@ -249,12 +339,21 @@ button {
     opacity: 1 !important;
   }
 }
-.closing {
-  opacity: 0; // Lors de la fermeture, cette classe réduit l'opacité à 0
-}
 
 .menu-social {
   @include flex-center;
+}
+
+.hover-img {
+  width: 15rem;
+  height: 10rem;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+
+  object-fit: cover;
 }
 
 @media screen and (min-width: 668px) {
@@ -304,24 +403,10 @@ button {
       display: flex;
       opacity: 0;
       white-space: nowrap;
-      animation: titleFadeIn 0.8s ease-in-out forwards;
+      animation: slideUp 0.8s cubic-bezier(0.56, 1.08, 1, 1) forwards;
+      animation-delay: 2.6s;
     }
   }
-}
-
-.title-container:nth-child(1) span {
-  animation-delay: 0ms;
-}
-.title-container:nth-child(2) span {
-  animation-delay: 50ms;
-}
-
-.title-container:nth-child(3) span {
-  animation-delay: 100ms;
-}
-
-.title-container:nth-child(4) span {
-  animation-delay: 150ms;
 }
 
 @media screen and (min-width: 668px) {
@@ -698,12 +783,6 @@ button {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .scroll-bar {
-    display: none;
-  }
-}
-
 // Contact section styles
 
 .contact {
@@ -873,13 +952,71 @@ footer {
   }
 }
 
-@keyframes titleFadeIn {
-  from {
+@keyframes slideUp {
+  0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(150px);
   }
-  to {
+  20% {
+    opacity: 1;
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour faire bouger le dégradé */
+@keyframes moveBorder {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes burgerAnim {
+  0% {
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 32px;
+  }
+}
+
+// enable hover  on burger during animation
+@keyframes enableHover {
+  0% {
+    pointer-events: none;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    pointer-events: auto;
+  }
+}
+
+@keyframes homeLinkAnim {
+  0% {
+    color: $secondary-color;
+  }
+  100% {
+    color: $primary-color;
   }
 }

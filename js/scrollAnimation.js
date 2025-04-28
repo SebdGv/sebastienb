@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const cardsContainer = document.querySelector(".works-container");
 const cards = document.querySelector(".cards");
 const title = document.querySelector(".works h2");
+const about = document.querySelector(".about");
 const aboutImg = document.querySelector(".about-img img");
 
 export function scrollAnimation() {

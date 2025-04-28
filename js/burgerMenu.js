@@ -11,8 +11,6 @@ export function toggleMenu() {
   const isOpen = menu.classList.contains("open-menu");
 
   if (isOpen) {
-    // Si le menu est déjà ouvert, ajouter la classe "closing"
-    // Attendre la fin de l'animation pour retirer les classes
     setTimeout(() => {
       menu.classList.remove("open-menu");
     }, 700); // Ajouter un délai de 300ms
